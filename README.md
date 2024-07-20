@@ -2,9 +2,7 @@
 
 ## LostHUB Patch Notes
 
+### Stable v1.0.0
 ```
--\\- LostHUB Stable Versions -//-
-	-v1.0.2
-	-v1.0.1
-	-v1.0.0
+
 ```
