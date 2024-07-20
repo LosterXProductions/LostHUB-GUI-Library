@@ -3,7 +3,7 @@ Instructions for LostHUB v1.0.0
 
 ## Loading Library
 ```lua
-local LostHUB = loadstring(game:HttpGet(('https://raw.githubusercontent.com/LosterXProductions/LostHUB/main/LostHUB%20v1.0.lua')))()
+local LostHUB = loadstring(game:HttpGet(('https://raw.githubusercontent.com/LosterXProductions/LostHUB-GUI-Library/main/LostHUB%20Stable')))()
 ```
 ## Creating the main UI
 ```lua
