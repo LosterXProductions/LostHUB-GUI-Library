@@ -1,5 +1,7 @@
 # LostHUB
 
+## LostHUB Patch Notes
+
 ```
 -\\- LostHUB Stable Versions -//-
 	-v1.0.2
