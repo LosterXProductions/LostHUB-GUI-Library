@@ -6,6 +6,7 @@ Latest and Past updates to LostHUB
 ### Stable v1.0.2
 ```
 - Fixed UI not Closing Properly
+- Added the Slider
 ```
 ### Stable v1.0.1
 ```
