@@ -1,5 +1,5 @@
 # LostHUB GUI Library
-Instructions for LostHUB v1.0.0
+Instructions for LostHUB Beta v1.1.0
 
 ## Loading Library
 ```lua
@@ -7,45 +7,67 @@ local LostHUB = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Lost
 ```
 ## Creating the main UI
 ```lua
-LostHUB.CreateUI("18544048114") -- Change the backgrounds image with an ImageId
+LostHUB.CreateUI({
+	Name = "LosterX", -- The name of your UI
+	Image = "18544048114", -- The ImageId for the background of your UI
+	BackgroundColor = Color3.fromRGB(93, 0, 186) -- The background color of your UI
+})
 ```
 ## Creating a Catagory
 ```lua
-LostHUB.CreateCatagory("Catagory Name")
+LostHUB.CreateCatagory({
+	Name = "Catagory" -- Your catagories name.
+})
 ```
 ## Creating a Label
 ```lua
-LostHUB.CreateLabel("Your Text Here")
+LostHUB.CreateLabel({
+	Text = "Text for Label."
+})
 ```
 ## Creating a Button
 ```lua
-LostHUB.CreateButton("Your Button", function()
-	-- Code Here
-end)
+LostHUB.CreateButton({
+	Text = "Your Button",
+	Function = function()
+		print("Button Clicked")
+	end,
+})
 ```
 ## Creating a Toggle
 ```lua
-LostHUB.CreateToggle("Your Toggle", function(Toggle)
-	if Toggle then
-		-- Value when considered Off
-	else
-		-- Value when considered On
-	end
-end)
+LostHUB.CreateToggle({
+	Text = "Your Toggle",
+	Function = function(Toggle)
+		if Toggle then
+			game.Lighting.Ambient = Color3.fromRGB(106, 106, 106) -- Default Value
+		else
+			game.Lighting.Ambient = Color3.new(1, 1, 1) -- Value after Toggle enabled
+		end
+	end,
+})
 ```
 ## Creating a Slider
 ```lua
-LostHUB.CreateSlider("Your Slider Name", 0, 100, 50, function(Value)
-  -- Value is the Sliders Current Value
-end)
-
---[[
-  The 0 will be your minimum slider value, set this to any value you please.
-  The 100 will be your maximum slider value, set this to any value you please.
-  The 50 will be your default slider value, set this to any value between your maximum and your minimum.
-]]
+LostHUB.CreateSlider({
+	Text = "Your Slider",
+	DefaultValue = 16,
+	MinimumValue = 8,
+	MaximumValue = 128,
+	Function = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end,
+})
+```
+## Notifying the User
+```lua
+LostHUB.NotifyLocalPlayer({
+	Text = "They will see this at the top of their screen!"
+})
 ```
 ## Adding a label in the About Catagory
 ```lua
-LostHUB.AddLabelToAbout("Your Label text here")
+LostHUB.AddLabelToAbout({
+	Text = "Text for About me Section."
+})
 ```
