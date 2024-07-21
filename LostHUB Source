@@ -1,0 +1,1220 @@
+local v0 = {};
+local v1 = nil;
+local v2 = nil;
+local v3 = game:GetService("TweenService");
+local v4 = game:GetService("UserInputService");
+v0.NotifyLocalPlayer = function(v14)
+	local v15 = 0 - 0;
+	local v16;
+	local v17;
+	local v18;
+	local v19;
+	local v20;
+	local v21;
+	local v22;
+	local v23;
+	local v24;
+	while true do
+		if (v15 == 9) then
+			v22.BorderSizePixel = 0 + 0;
+			v22.Position = UDim2.new(0.5 + 0, 0 - 0, 1709.5 - (71 + 1638), 0 - 0);
+			v22.Size = UDim2.new(0.5 + 0, 0 - 0, 0.5 + 0, 0 + 0);
+			v22.Font = Enum.Font.SourceSansBold;
+			v22.Text = "OK";
+			v22.TextColor3 = Color3.fromRGB(700 - 445, 220 + 35, 255);
+			v22.TextScaled = true;
+			v15 = 1140 - (87 + 1043);
+		end
+		if (v15 == 3) then
+			v17.BackgroundColor3 = Color3.fromRGB(541 - (10 + 438), 0 + 0, 703 - 518);
+			v17.BackgroundTransparency = 0.25;
+			v17.BorderColor3 = Color3.fromRGB(0 + 0, 1180 - (1123 + 57), 0 + 0);
+			v17.BorderSizePixel = 254 - (163 + 91);
+			v17.ClipsDescendants = true;
+			v17.Position = UDim2.new(1930.5 - (1869 + 61), 0, 0.32838285, 0 + 0);
+			v17.Size = UDim2.new(0, 1584 - 1134, 0 - 0, 9 + 54);
+			v15 = 5 - 1;
+		end
+		if (v15 == 0) then
+			v14 = v14 or {};
+			v14.Text = v14.Text or "Your notification text goes here!";
+			v16 = Instance.new("ImageLabel");
+			v17 = Instance.new("Frame");
+			v18 = Instance.new("UICorner");
+			v19 = Instance.new("TextLabel");
+			v20 = Instance.new("Frame");
+			v15 = 1 + 0;
+		end
+		if (v15 == 8) then
+			v20.Size = UDim2.new(0, 46, 0, 31);
+			v21.Parent = v20;
+			v22.Parent = v20;
+			v22.AnchorPoint = Vector2.new(1474.5 - (1329 + 145), 971.5 - (140 + 831));
+			v22.BackgroundColor3 = Color3.fromRGB(2105 - (1409 + 441), 973 - (15 + 703), 119 + 136);
+			v22.BackgroundTransparency = 439 - (262 + 176);
+			v22.BorderColor3 = Color3.fromRGB(1721 - (345 + 1376), 0, 688 - (198 + 490));
+			v15 = 9;
+		end
+		if (v15 == 10) then
+			v22.TextSize = 14;
+			v22.TextTransparency = 0.25;
+			v22.TextWrapped = true;
+			v23 = v17;
+			v24 = false;
+			v23.Parent.Position = UDim2.new(0.5 - 0, 0 - 0, -(1206.5 - (696 + 510)), 0 - 0);
+			v3:Create(v23.Parent, TweenInfo.new(1262.75 - (1091 + 171), Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0 + 0, false, 0 - 0), {Position=UDim2.new(0.5, 0, -0.09, 0 - 0)}):Play();
+			v15 = 11;
+		end
+		if (v15 == (375 - (123 + 251))) then
+			v21 = Instance.new("UICorner");
+			v22 = Instance.new("TextLabel");
+			v16.Name = "Notification";
+			v16.Parent = v1.Parent.Parent;
+			v16.AnchorPoint = Vector2.new(0.5, 0 - 0);
+			v16.BackgroundColor3 = Color3.fromRGB(953 - (208 + 490), 22 + 233, 114 + 141);
+			v16.BackgroundTransparency = 837 - (660 + 176);
+			v15 = 1 + 1;
+		end
+		if (v15 == (209 - (14 + 188))) then
+			v20.Parent = v17;
+			v20.AnchorPoint = Vector2.new(675.5 - (534 + 141), 0.5);
+			v20.BackgroundColor3 = Color3.fromRGB(103 + 152, 226 + 29, 255);
+			v20.BackgroundTransparency = 0.8 + 0;
+			v20.BorderColor3 = Color3.fromRGB(0, 0 - 0, 0 - 0);
+			v20.BorderSizePixel = 0;
+			v20.Position = UDim2.new(0 - 0, 418, 0, 43 + 37);
+			v15 = 8;
+		end
+		if (v15 == (8 + 3)) then
+			v23.MouseEnter:Connect(function()
+				v3:Create(v23, TweenInfo.new(396.45 - (115 + 281), Enum.EasingStyle.Quart, Enum.EasingDirection.Out, 0 - 0, false, 0 + 0), {Size=UDim2.new(0, 1087 - 637, 0, 102)}):Play();
+			end);
+			v23.MouseLeave:Connect(function()
+				v3:Create(v23, TweenInfo.new(0.45 - 0, Enum.EasingStyle.Quart, Enum.EasingDirection.Out, 0, false, 867 - (550 + 317)), {Size=UDim2.new(0, 450, 0 - 0, 63)}):Play();
+			end);
+			v23.BTN.MouseEnter:Connect(function()
+				v3:Create(v23.BTN, TweenInfo.new(0.25, Enum.EasingStyle.Quart, Enum.EasingDirection.Out, 0, false, 0 - 0), {Size=UDim2.new(0, 54, 0 - 0, 323 - (134 + 151)),Rotation=math.random(-(1680 - (970 + 695)), 15),BackgroundTransparency=0.6}):Play();
+				v24 = true;
+			end);
+			v23.BTN.MouseLeave:Connect(function()
+				local v736 = 0 - 0;
+				while true do
+					if (v736 == (1990 - (582 + 1408))) then
+						v3:Create(v23.BTN, TweenInfo.new(0.25 - 0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0 - 0, false, 0 - 0), {Size=UDim2.new(0, 1870 - (1195 + 629), 0 - 0, 31),Rotation=(241 - (187 + 54)),BackgroundTransparency=(780.8 - (162 + 618))}):Play();
+						v24 = false;
+						break;
+					end
+				end
+			end);
+			v4.InputBegan:Connect(function(v737)
+				if ((v737.UserInputType == Enum.UserInputType.MouseButton1) and v24) then
+					local v753 = 0;
+					while true do
+						if ((0 + 0) == v753) then
+							v3:Create(v23.BTN, TweenInfo.new(0.15 + 0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0 - 0, false, 0 - 0), {Size=UDim2.new(0 + 0, 1676 - (1373 + 263), 1000 - (451 + 549), 9 + 18),BackgroundTransparency=(0.9 - 0)}):Play();
+							v3:Create(v23.Parent, TweenInfo.new(0.45, Enum.EasingStyle.Quart, Enum.EasingDirection.In, 0 - 0, false, 1384 - (746 + 638)), {Position=UDim2.new(0.5, 0 + 0, -0.5, 0 - 0)}):Play();
+							break;
+						end
+					end
+				end
+			end);
+			v4.InputEnded:Connect(function(v738)
+				if ((v738.UserInputType == Enum.UserInputType.MouseButton1) and v24) then
+					v3:Create(v23.BTN, TweenInfo.new(0.25, Enum.EasingStyle.Quart, Enum.EasingDirection.Out, 341 - (218 + 123), false, 0), {Size=UDim2.new(0, 54, 1581 - (1535 + 46), 38),BackgroundTransparency=(0.6 + 0)}):Play();
+				end
+			end);
+			break;
+		end
+		if (v15 == (1 + 5)) then
+			v19.TextSize = 584 - (306 + 254);
+			v19.TextStrokeTransparency = 0.2 + 0;
+			v19.TextTransparency = 0.2 - 0;
+			v19.TextWrapped = true;
+			v19.TextXAlignment = Enum.TextXAlignment.Left;
+			v19.TextYAlignment = Enum.TextYAlignment.Top;
+			v20.Name = "BTN";
+			v15 = 1474 - (899 + 568);
+		end
+		if (v15 == 4) then
+			v18.CornerRadius = UDim.new(0, 12 + 6);
+			v18.Parent = v17;
+			v19.Name = "PromptText";
+			v19.Parent = v17;
+			v19.AnchorPoint = Vector2.new(0.5 - 0, 0.5);
+			v19.BackgroundColor3 = Color3.fromRGB(858 - (268 + 335), 255, 545 - (60 + 230));
+			v19.BackgroundTransparency = 573 - (426 + 146);
+			v15 = 1 + 4;
+		end
+		if (v15 == (1458 - (282 + 1174))) then
+			v16.BorderColor3 = Color3.fromRGB(811 - (569 + 242), 0 - 0, 0 + 0);
+			v16.BorderSizePixel = 1024 - (706 + 318);
+			v16.Position = UDim2.new(1251.499721497 - (721 + 530), 1271 - (945 + 326), -0.0725509971, 0 - 0);
+			v16.Size = UDim2.new(0 + 0, 800, 700 - (271 + 429), 303);
+			v17.Name = "Content";
+			v17.Parent = v16;
+			v17.AnchorPoint = Vector2.new(0.5 + 0, 1500 - (1408 + 92));
+			v15 = 1089 - (461 + 625);
+		end
+		if (v15 == (1293 - (993 + 295))) then
+			v19.BorderColor3 = Color3.fromRGB(0 + 0, 1171 - (418 + 753), 0);
+			v19.BorderSizePixel = 0 + 0;
+			v19.Position = UDim2.new(0 + 0, 225, 0, 10 + 22);
+			v19.Size = UDim2.new(0 + 0, 960 - (406 + 123), 1769 - (1749 + 20), 12 + 38);
+			v19.Font = Enum.Font.SourceSansBold;
+			v19.Text = v14.Text;
+			v19.TextColor3 = Color3.fromRGB(1577 - (1249 + 73), 91 + 164, 255);
+			v15 = 1151 - (466 + 679);
+		end
+	end
+end;
+v0.CreateUI = function(v25)
+	v25 = v25 or {};
+	v25.Image = v25.Image or "18544048114";
+	v25.Name = v25.Name or "Your Hub Name";
+	v25.BackgroundColor = v25.BackgroundColor or Color3.fromRGB(93, 0 - 0, 531 - 345);
+	local v29 = Instance.new("ScreenGui");
+	local v30 = Instance.new("UIScale");
+	local v31 = Instance.new("ImageLabel");
+	local v32 = Instance.new("ImageLabel");
+	local v33 = Instance.new("UICorner");
+	local v34 = Instance.new("ImageLabel");
+	local v35 = Instance.new("Frame");
+	local v36 = Instance.new("UICorner");
+	local v37 = Instance.new("ScrollingFrame");
+	local v38 = Instance.new("UIGridLayout");
+	local v39 = Instance.new("Frame");
+	local v40 = Instance.new("UICorner");
+	local v41 = Instance.new("ScrollingFrame");
+	local v42 = Instance.new("UIGridLayout");
+	local v43 = Instance.new("Frame");
+	local v44 = Instance.new("UICorner");
+	local v45 = Instance.new("Frame");
+	local v46 = Instance.new("UICorner");
+	local v47 = Instance.new("TextLabel");
+	local v48 = Instance.new("TextButton");
+	local v49 = Instance.new("TextButton");
+	local v50 = Instance.new("Frame");
+	local v51 = Instance.new("UICorner");
+	v29.Name = v25.Name;
+	v29.Parent = game.Players.LocalPlayer.PlayerGui;
+	v29.ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
+	v29.IgnoreGuiInset = true;
+	v30.Parent = v29;
+	v31.Name = "DropShadow";
+	v31.Parent = v29;
+	v31.AnchorPoint = Vector2.new(1900.5 - (106 + 1794), 0.5);
+	v31.BackgroundColor3 = Color3.fromRGB(81 + 174, 65 + 190, 752 - 497);
+	v31.BackgroundTransparency = 2 - 1;
+	v31.BorderColor3 = Color3.fromRGB(114 - (4 + 110), 0, 584 - (57 + 527));
+	v31.BorderSizePixel = 1427 - (41 + 1386);
+	v31.Position = UDim2.new(103.646796644 - (17 + 86), 0 + 0, 0.443877548 - 0, 0 - 0);
+	v31.Size = UDim2.new(166 - (122 + 44), 800, 0, 450);
+	v31.Image = "rbxassetid://18572237756";
+	v32.Name = "MainFrame";
+	v32.Parent = v31;
+	v32.AnchorPoint = Vector2.new(0.5 - 0, 0.5);
+	v32.BackgroundColor3 = v25.BackgroundColor;
+	v32.BorderColor3 = Color3.fromRGB(0 - 0, 0, 0);
+	v32.BorderSizePixel = 0;
+	v32.Position = UDim2.new(0 + 0, 407, 0, 34 + 201);
+	v32.Size = UDim2.new(0.66624999 - 0, 65 - (30 + 35), 0.666666687, 0);
+	v32.Image = "rbxassetid://" .. v25.Image;
+	v32.ImageTransparency = 0.2 + 0;
+	v33.CornerRadius = UDim.new(0, 12);
+	v33.Parent = v32;
+	v34.Name = "Title";
+	v34.Parent = v32;
+	v34.BackgroundColor3 = Color3.fromRGB(0, 0, 1257 - (1043 + 214));
+	v34.BackgroundTransparency = 3 - 2;
+	v34.BorderColor3 = Color3.fromRGB(1212 - (323 + 889), 0 - 0, 580 - (361 + 219));
+	v34.BorderSizePixel = 320 - (53 + 267);
+	v34.Position = UDim2.new(0.0157227945 + 0, 0, 413.015557454 - (15 + 398), 982 - (18 + 964));
+	v34.Size = UDim2.new(0 - 0, 100, 0 + 0, 28);
+	v34.Image = "rbxassetid://18543912384";
+	v35.Name = "Content";
+	v35.Parent = v32;
+	v35.AnchorPoint = Vector2.new(0.5 + 0, 850.5 - (20 + 830));
+	v35.BackgroundColor3 = Color3.fromRGB(0, 0 + 0, 0);
+	v35.BackgroundTransparency = 126.8 - (116 + 10);
+	v35.BorderColor3 = Color3.fromRGB(0 + 0, 738 - (542 + 196), 0);
+	v35.BorderSizePixel = 0 - 0;
+	v35.ClipsDescendants = true;
+	v35.Position = UDim2.new(0.636022508, 0 + 0, 0.548333347 + 0, 0 + 0);
+	v35.Size = UDim2.new(0 - 0, 955 - 582, 0, 1810 - (1126 + 425));
+	v36.CornerRadius = UDim.new(0, 12);
+	v36.Parent = v35;
+	v37.Name = "About";
+	v37.Parent = v35;
+	v37.Active = true;
+	v37.AnchorPoint = Vector2.new(0.5, 405.5 - (118 + 287));
+	v37.BackgroundColor3 = Color3.fromRGB(255, 999 - 744, 255);
+	v37.BackgroundTransparency = 1122 - (118 + 1003);
+	v37.BorderColor3 = Color3.fromRGB(0 - 0, 0, 0);
+	v37.BorderSizePixel = 377 - (142 + 235);
+	v37.Position = UDim2.new(0.5 - 0, 0, 0.5 + 0, 977 - (553 + 424));
+	v37.Size = UDim2.new(1 - 0, 0, 0.970000029 + 0, 0 + 0);
+	v37.CanvasSize = UDim2.new(0 + 0, 0 + 0, 1, 0 + 0);
+	v37.ScrollBarThickness = 8 - 4;
+	v38.Parent = v37;
+	v38.HorizontalAlignment = Enum.HorizontalAlignment.Center;
+	v38.SortOrder = Enum.SortOrder.LayoutOrder;
+	v38.CellPadding = UDim2.new(0, 13 - 8, 0 - 0, 1 + 2);
+	v38.CellSize = UDim2.new(0 - 0, 360, 753 - (239 + 514), 12 + 20);
+	v39.Name = "Catagory";
+	v39.Parent = v32;
+	v39.AnchorPoint = Vector2.new(1329.5 - (797 + 532), 0.5);
+	v39.BackgroundColor3 = Color3.fromRGB(0 + 0, 0 + 0, 0 - 0);
+	v39.BackgroundTransparency = 1202.8 - (373 + 829);
+	v39.BorderColor3 = Color3.fromRGB(731 - (476 + 255), 1130 - (369 + 761), 0 + 0);
+	v39.BorderSizePixel = 0 - 0;
+	v39.Position = UDim2.new(0.144465297, 0 - 0, 238.548333347 - (64 + 174), 0);
+	v39.Size = UDim2.new(0 + 0, 137, 0, 382 - 123);
+	v40.CornerRadius = UDim.new(336 - (144 + 192), 12);
+	v40.Parent = v39;
+	v41.Name = "Buttons";
+	v41.Parent = v39;
+	v41.Active = true;
+	v41.AnchorPoint = Vector2.new(216.5 - (42 + 174), 0.5);
+	v41.BackgroundColor3 = Color3.fromRGB(192 + 63, 212 + 43, 255);
+	v41.BackgroundTransparency = 1 + 0;
+	v41.BorderColor3 = Color3.fromRGB(1504 - (363 + 1141), 0, 0);
+	v41.BorderSizePixel = 1580 - (1183 + 397);
+	v41.Position = UDim2.new(0.5 - 0, 0 + 0, 0.5 + 0, 1975 - (1913 + 62));
+	v41.Size = UDim2.new(1, 0 + 0, 0.970000029 - 0, 1933 - (565 + 1368));
+	v41.CanvasSize = UDim2.new(0, 0 - 0, 1662 - (1477 + 184), 0 - 0);
+	v41.ScrollBarThickness = 4 + 0;
+	v42.Parent = v41;
+	v42.HorizontalAlignment = Enum.HorizontalAlignment.Center;
+	v42.SortOrder = Enum.SortOrder.LayoutOrder;
+	v42.CellPadding = UDim2.new(856 - (564 + 292), 8 - 3, 0, 2);
+	v42.CellSize = UDim2.new(0 - 0, 429 - (244 + 60), 0 + 0, 506 - (41 + 435));
+	v43.Name = "About";
+	v43.Parent = v41;
+	v43.BackgroundColor3 = Color3.fromRGB(0, 1001 - (938 + 63), 0 + 0);
+	v43.BackgroundTransparency = 1126 - (936 + 189);
+	v43.BorderColor3 = Color3.fromRGB(0 + 0, 0, 1613 - (1565 + 48));
+	v43.BorderSizePixel = 0 + 0;
+	v43.Size = UDim2.new(1138 - (782 + 356), 100, 267 - (176 + 91), 260 - 160);
+	v44.CornerRadius = UDim.new(0, 14 - 4);
+	v44.Parent = v43;
+	v45.Name = "Content";
+	v45.Parent = v43;
+	v45.AnchorPoint = Vector2.new(1092.5 - (975 + 117), 1875.5 - (157 + 1718));
+	v45.BackgroundColor3 = Color3.fromRGB(0, 0 + 0, 0 - 0);
+	v45.BackgroundTransparency = 0.8 - 0;
+	v45.BorderColor3 = Color3.fromRGB(1018 - (697 + 321), 0 - 0, 0 - 0);
+	v45.BorderSizePixel = 0;
+	v45.Position = UDim2.new(0.5, 0 - 0, 0.5 + 0, 0);
+	v45.Size = UDim2.new(1 - 0, 0, 2 - 1, 1227 - (322 + 905));
+	v46.CornerRadius = UDim.new(611 - (602 + 9), 10);
+	v46.Parent = v45;
+	v47.Parent = v45;
+	v47.AnchorPoint = Vector2.new(1189.5 - (449 + 740), 872.5 - (826 + 46));
+	v47.BackgroundColor3 = Color3.fromRGB(1202 - (245 + 702), 255, 805 - 550);
+	v47.BackgroundTransparency = 1;
+	v47.BorderColor3 = Color3.fromRGB(0 + 0, 1898 - (260 + 1638), 440 - (382 + 58));
+	v47.BorderSizePixel = 0;
+	v47.Position = UDim2.new(0.5 - 0, 0 + 0, 0.5, 0 - 0);
+	v47.Size = UDim2.new(2 - 1, 1205 - (902 + 303), 1 - 0, 0 - 0);
+	v47.Font = Enum.Font.SourceSansBold;
+	v47.Text = "About";
+	v47.TextColor3 = Color3.fromRGB(255, 255, 22 + 233);
+	v47.TextSize = 18;
+	v48.Name = "ExitBTN";
+	v48.Parent = v32;
+	v48.BackgroundColor3 = Color3.fromRGB(1945 - (1121 + 569), 469 - (22 + 192), 938 - (483 + 200));
+	v48.BackgroundTransparency = 1;
+	v48.BorderColor3 = Color3.fromRGB(1463 - (1404 + 59), 0, 0 - 0);
+	v48.BorderSizePixel = 0 - 0;
+	v48.Position = UDim2.new(0.943714797, 0, 765 - (468 + 297), 0);
+	v48.Size = UDim2.new(0, 30, 0, 30);
+	v48.Font = Enum.Font.SourceSansBold;
+	v48.Text = "X";
+	v48.TextColor3 = Color3.fromRGB(817 - (334 + 228), 255, 860 - 605);
+	v48.TextSize = 32;
+	v48.TextStrokeTransparency = 0 - 0;
+	v49.Name = "MinBTN";
+	v49.Parent = v32;
+	v49.BackgroundColor3 = Color3.fromRGB(255, 462 - 207, 73 + 182);
+	v49.BackgroundTransparency = 237 - (141 + 95);
+	v49.BorderColor3 = Color3.fromRGB(0, 0, 0 + 0);
+	v49.BorderSizePixel = 0;
+	v49.Position = UDim2.new(0.887429655 - 0, 0 - 0, 0 + 0, 0);
+	v49.Size = UDim2.new(0 - 0, 22 + 8, 0, 16 + 14);
+	v49.Font = Enum.Font.SourceSansBold;
+	v49.Text = "-";
+	v49.TextColor3 = Color3.fromRGB(359 - 104, 151 + 104, 418 - (92 + 71));
+	v49.TextSize = 16 + 16;
+	v49.TextStrokeTransparency = 0 - 0;
+	v50.Name = "MouseHoverPart";
+	v50.Parent = v31;
+	v50.BackgroundColor3 = Color3.fromRGB(255, 255, 1020 - (574 + 191));
+	v50.BackgroundTransparency = 1 + 0;
+	v50.BorderColor3 = Color3.fromRGB(0 - 0, 0, 0 + 0);
+	v50.BorderSizePixel = 849 - (254 + 595);
+	v50.Position = UDim2.new(126.17936714 - (55 + 71), 0, 0.194444448, 0 - 0);
+	v50.Size = UDim2.new(0, 2263 - (573 + 1217), 0, 88 - 56);
+	v51.CornerRadius = UDim.new(0 + 0, 18 - 6);
+	v51.Parent = v31;
+	local function v218()
+		local v502 = Instance.new("LocalScript", v29);
+		wait(939.1 - (714 + 225));
+		local v503 = v502.Parent.DropShadow.MainFrame.Content;
+		local v504 = v502.Parent.DropShadow.MainFrame.Catagory;
+		local v505 = game:GetService("RunService");
+		local v506 = true;
+		local v507 = false;
+		local v508 = false;
+		local v509 = UDim2.new();
+		v502.Parent.DropShadow.MainFrame.MinBTN.MouseButton1Up:Connect(function()
+			local v522 = 0 - 0;
+			while true do
+				if (v522 == (0 - 0)) then
+					v509 = v502.Parent.DropShadow.Position;
+					v3:Create(v502.Parent.DropShadow, TweenInfo.new(0.75 + 0, Enum.EasingStyle.Quint, Enum.EasingDirection.In, 0 - 0, false, 0), {Position=(v509 + UDim2.new(806 - (118 + 688), 0, 2, 48 - (25 + 23)))}):Play();
+					break;
+				end
+			end
+		end);
+		v502.Parent.DropShadow.MainFrame.ExitBTN.MouseButton1Up:Connect(function()
+			for v612, v613 in pairs(v502.Parent:GetDescendants()) do
+				if v613:IsA("GuiObject") then
+					local v748 = 0 + 0;
+					while true do
+						if (v748 == (1886 - (927 + 959))) then
+							if (v613:IsA("Frame") or v613:IsA("TextButton") or v613:IsA("TextBox")) then
+								v3:Create(v613, TweenInfo.new(0.2 - 0, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0, false, 0), {BackgroundTransparency=(733 - (16 + 716))}):Play();
+							end
+							if (v613:IsA("ImageLabel") or v613:IsA("ImageButton")) then
+								v3:Create(v613, TweenInfo.new(0.2 - 0, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0, false, 97 - (11 + 86)), {ImageTransparency=(2 - 1),BackgroundTransparency=1}):Play();
+							end
+							v748 = 1;
+						end
+						if (v748 == (286 - (175 + 110))) then
+							if (v613:IsA("TextLabel") or v613:IsA("TextButton") or v613:IsA("TextBox")) then
+								v3:Create(v613, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0, false, 0), {TextTransparency=(2 - 1),TextStrokeTransparency=1}):Play();
+							end
+							if v613:IsA("UIStroke") then
+								v3:Create(v613, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0 - 0, false, 1796 - (503 + 1293)), {Transparency=(2 - 1)}):Play();
+							end
+							break;
+						end
+					end
+				end
+			end
+			wait(0.6);
+			v502.Parent:Destroy();
+		end);
+		local v510 = function(v523, v524)
+			local v525 = 0 + 0;
+			while true do
+				if (v525 == (1061 - (810 + 251))) then
+					if ((v524.Position == UDim2.new(0.5 + 0, 0 + 0, 0.5 + 0, 533 - (43 + 490))) and (v524.Name ~= v523.Name)) then
+						v3:Create(v524, TweenInfo.new(733.6 - (711 + 22), Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0, false, 0 - 0), {Position=UDim2.new(-(859.5 - (240 + 619)), 0 + 0, 0.5 - 0, 0)}):Play();
+					end
+					if (v524.Name == v523.Name) then
+						local v754 = 0;
+						while true do
+							if (v754 == 0) then
+								v524.Position = UDim2.new(1.5, 0, 0.5, 0);
+								v3:Create(v524, TweenInfo.new(0.6 + 0, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 1744 - (1344 + 400), false, 0), {Position=UDim2.new(0.5, 0, 0.5, 405 - (255 + 150))}):Play();
+								break;
+							end
+						end
+					end
+					break;
+				end
+			end
+		end;
+		local function v511(v526)
+			v526.CanvasSize = UDim2.new(0 + 0, 0, 0 + 0, v526.UIGridLayout.AbsoluteContentSize.Y);
+		end
+		for v528, v529 in pairs(v503:GetChildren()) do
+			if v529:IsA("ScrollingFrame") then
+				v511(v529);
+			end
+		end
+		for v530, v531 in pairs(v504:GetChildren()) do
+			if v531:IsA("ScrollingFrame") then
+				v511(v531);
+			end
+		end
+		v502.Parent.DropShadow.MouseHoverPart.MouseEnter:Connect(function()
+			v508 = true;
+		end);
+		v502.Parent.DropShadow.MouseHoverPart.MouseLeave:Connect(function()
+			v508 = false;
+		end);
+		v4.InputBegan:Connect(function(v532)
+			if ((v532.UserInputType == Enum.UserInputType.MouseButton1) and v508) then
+				local v739 = 0 - 0;
+				local v740;
+				while true do
+					if (v739 == (0 - 0)) then
+						v507 = true;
+						v740 = v4:GetMouseLocation();
+						break;
+					end
+				end
+			end
+		end);
+		v4.InputEnded:Connect(function(v533)
+			local v534 = 1739 - (404 + 1335);
+			while true do
+				if ((406 - (183 + 223)) == v534) then
+					if (v533.UserInputType == Enum.UserInputType.MouseButton1) then
+						v507 = false;
+					end
+					if (v533.KeyCode == Enum.KeyCode.RightShift) then
+						v3:Create(v502.Parent.DropShadow, TweenInfo.new(1 - 0, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0 + 0), {Position=v509}):Play();
+					end
+					break;
+				end
+			end
+		end);
+		for v535, v536 in pairs(v504.Buttons:GetChildren()) do
+			if v536:IsA("Frame") then
+				local v741 = false;
+				v536.Content.MouseEnter:Connect(function()
+					v741 = true;
+					v3:Create(v536.Content, TweenInfo.new(0.3 + 0, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 337 - (10 + 327), false, 0 + 0), {Rotation=math.random(-17, 355 - (118 + 220)),Size=UDim2.new(1.05 + 0, 449 - (108 + 341), 1.05, 0 + 0),BackgroundColor3=Color3.fromRGB(1078 - 823, 1748 - (711 + 782), 488 - 233)}):Play();
+				end);
+				v536.Content.MouseLeave:Connect(function()
+					local v749 = 0;
+					while true do
+						if (v749 == 0) then
+							v741 = false;
+							v3:Create(v536.Content, TweenInfo.new(469.25 - (270 + 199), Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0 + 0, false, 1819 - (580 + 1239)), {Rotation=(0 - 0),Size=UDim2.new(1, 0 + 0, 1 + 0, 0 + 0),BackgroundColor3=Color3.fromRGB(0, 0 - 0, 0 + 0),BackgroundTransparency=(1167.8 - (645 + 522))}):Play();
+							break;
+						end
+					end
+				end);
+				v4.InputBegan:Connect(function(v750)
+					if ((v750.UserInputType == Enum.UserInputType.MouseButton1) and v741) then
+						v3:Create(v536.Content, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 1790 - (1010 + 780), false, 0), {Size=UDim2.new(0.95, 0, 0.95 + 0, 0 - 0),BackgroundTransparency=0.6}):Play();
+						if v506 then
+							v506 = false;
+							for v760, v761 in pairs(v503:GetChildren()) do
+								if (v503:FindFirstChild(v536.Name).Position ~= UDim2.new(0.5 - 0, 1836 - (1045 + 791), 0.5, 0)) then
+									local v762 = 0 - 0;
+									while true do
+										if (v762 == (0 - 0)) then
+											if v761:IsA("ScrollingFrame") then
+												if ((v761.Position == UDim2.new(505.5 - (351 + 154), 0, 0.5, 1574 - (1281 + 293))) and (v761.Name ~= v536.Name)) then
+													v3:Create(v761, TweenInfo.new(0.6, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 266 - (28 + 238), false, 0 - 0), {Position=UDim2.new(-(1559.5 - (1381 + 178)), 0 + 0, 0.5 + 0, 0 + 0)}):Play();
+												end
+											end
+											if (v761.Name == v536.Name) then
+												local v763 = 0 - 0;
+												while true do
+													if (v763 == (0 + 0)) then
+														v761.Position = UDim2.new(1.5, 0, 0.5, 470 - (381 + 89));
+														v3:Create(v761, TweenInfo.new(0.6 + 0, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0, false, 0 + 0), {Position=UDim2.new(0.5 - 0, 1156 - (1074 + 82), 0.5, 0 - 0)}):Play();
+														break;
+													end
+												end
+											end
+											break;
+										end
+									end
+								end
+							end
+							wait(1784.6 - (214 + 1570));
+							v506 = true;
+						end
+					end
+				end);
+				v4.InputEnded:Connect(function(v751)
+					if ((v751.UserInputType == Enum.UserInputType.MouseButton1) and v741) then
+						v3:Create(v536.Content, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 1455 - (990 + 465), false, 0), {Size=UDim2.new(1 + 0, 0, 1 + 0, 0),BackgroundTransparency=(0.8 + 0)}):Play();
+					end
+				end);
+			end
+		end
+		local v512 = UDim2.new();
+		v505.RenderStepped:Connect(function(v537)
+			local v538 = 0 - 0;
+			local v539;
+			while true do
+				if ((1727 - (1668 + 58)) == v538) then
+					if (v507 and (v502.Parent.DropShadow.Position ~= UDim2.new())) then
+						local v755 = 626 - (512 + 114);
+						local v756;
+						while true do
+							if (v755 == 0) then
+								v756 = UDim2.new(0 - 0, v4:GetMouseLocation().X, 0, v4:GetMouseLocation().Y + (258 - 133));
+								if (v512 ~= v756) then
+									v3:Create(v502.Parent.DropShadow, TweenInfo.new(v539, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0 - 0), {Position=v756}):Play();
+									v512 = v756;
+								end
+								break;
+							end
+						end
+					end
+					break;
+				end
+				if (v538 == (0 + 0)) then
+					v537 = v537 * (12 + 48);
+					v539 = 0.2;
+					v538 = 1 + 0;
+				end
+			end
+		end);
+	end
+	coroutine.wrap(v218)();
+	v49.MouseButton1Up:Connect(function()
+		v0.NotifyLocalPlayer({Text="To re-open your UI press Left Shift."});
+	end);
+	v1 = v32;
+	v0.NotifyLocalPlayer({Text="UI successfully loaded."});
+end;
+v0.CreateCatagory = function(v219)
+	v219 = v219 or {};
+	v219.Name = v219.Name or "Catagory Name";
+	local v221 = Instance.new("Frame");
+	local v222 = Instance.new("UICorner");
+	local v223 = Instance.new("Frame");
+	local v224 = Instance.new("UICorner");
+	local v225 = Instance.new("TextLabel");
+	v221.Name = v219.Name;
+	v221.Parent = v1.Catagory.Buttons;
+	v221.BackgroundColor3 = Color3.fromRGB(0 - 0, 1994 - (109 + 1885), 1469 - (1269 + 200));
+	v221.BackgroundTransparency = 1;
+	v221.BorderColor3 = Color3.fromRGB(0 - 0, 815 - (98 + 717), 0);
+	v221.BorderSizePixel = 0;
+	v221.Size = UDim2.new(826 - (802 + 24), 100, 0 - 0, 126 - 26);
+	v222.CornerRadius = UDim.new(0 + 0, 8 + 2);
+	v222.Parent = v221;
+	v223.Name = "Content";
+	v223.Parent = v221;
+	v223.AnchorPoint = Vector2.new(0.5 + 0, 0.5);
+	v223.BackgroundColor3 = Color3.fromRGB(0, 0, 0 + 0);
+	v223.BackgroundTransparency = 0.8 - 0;
+	v223.BorderColor3 = Color3.fromRGB(0 - 0, 0 + 0, 0);
+	v223.BorderSizePixel = 0;
+	v223.Position = UDim2.new(0.5 + 0, 0 + 0, 0.5, 0);
+	v223.Size = UDim2.new(1, 0 + 0, 1 + 0, 1433 - (797 + 636));
+	v224.CornerRadius = UDim.new(0, 48 - 38);
+	v224.Parent = v223;
+	v225.Parent = v223;
+	v225.AnchorPoint = Vector2.new(1619.5 - (1427 + 192), 0.5);
+	v225.BackgroundColor3 = Color3.fromRGB(255, 89 + 166, 592 - 337);
+	v225.BackgroundTransparency = 1;
+	v225.BorderColor3 = Color3.fromRGB(0 + 0, 0 + 0, 326 - (192 + 134));
+	v225.BorderSizePixel = 1276 - (316 + 960);
+	v225.Position = UDim2.new(0.5 + 0, 0 + 0, 0.5 + 0, 0 - 0);
+	v225.Size = UDim2.new(552 - (83 + 468), 1806 - (1202 + 604), 4 - 3, 0 - 0);
+	v225.Font = Enum.Font.SourceSansBold;
+	v225.Text = v219.Name;
+	v225.TextColor3 = Color3.fromRGB(255, 706 - 451, 580 - (45 + 280));
+	v225.TextSize = 18 + 0;
+	local v223 = Instance.new("ScrollingFrame");
+	local v260 = Instance.new("UIGridLayout");
+	v223.Name = v219.Name;
+	v223.Parent = v1.Content;
+	v223.Active = true;
+	v223.AnchorPoint = Vector2.new(0.5 + 0, 0.5);
+	v223.BackgroundColor3 = Color3.fromRGB(94 + 161, 255, 142 + 113);
+	v223.BackgroundTransparency = 1;
+	v223.BorderColor3 = Color3.fromRGB(0, 0 + 0, 0 - 0);
+	v223.BorderSizePixel = 1911 - (340 + 1571);
+	v223.Position = UDim2.new(1.5 + 0, 1772 - (1733 + 39), 0.5, 0 - 0);
+	v223.Size = UDim2.new(1035 - (125 + 909), 1948 - (1096 + 852), 0.970000029, 0 + 0);
+	v223.CanvasSize = UDim2.new(0 - 0, 0 + 0, 513 - (409 + 103), 236 - (46 + 190));
+	v223.ScrollBarThickness = 99 - (51 + 44);
+	v260.Parent = v223;
+	v260.HorizontalAlignment = Enum.HorizontalAlignment.Center;
+	v260.SortOrder = Enum.SortOrder.LayoutOrder;
+	v260.CellPadding = UDim2.new(0 + 0, 1322 - (1114 + 203), 726 - (228 + 498), 1 + 2);
+	v260.CellSize = UDim2.new(0 + 0, 1023 - (174 + 489), 0 - 0, 32);
+	v2 = v223;
+end;
+v0.CreateLabel = function(v272)
+	v272 = v272 or {};
+	v272.Text = v272.Text or "Text Label Text";
+	local v274 = Instance.new("Frame");
+	local v275 = Instance.new("UICorner");
+	local v276 = Instance.new("Frame");
+	local v277 = Instance.new("UICorner");
+	local v278 = Instance.new("TextLabel");
+	v274.Name = v272.Text;
+	v274.Parent = v2;
+	v274.BackgroundColor3 = Color3.fromRGB(0, 1905 - (830 + 1075), 524 - (303 + 221));
+	v274.BackgroundTransparency = 1;
+	v274.BorderColor3 = Color3.fromRGB(1269 - (231 + 1038), 0, 0 + 0);
+	v274.BorderSizePixel = 0;
+	v274.Position = UDim2.new(0.325737268, 1162 - (171 + 991), 6.073633e-8, 0 - 0);
+	v274.Size = UDim2.new(0, 280, 0, 161 - 101);
+	v275.CornerRadius = UDim.new(0 - 0, 9 + 1);
+	v275.Parent = v274;
+	v276.Name = "Content";
+	v276.Parent = v274;
+	v276.AnchorPoint = Vector2.new(0.5 - 0, 0.5);
+	v276.BackgroundColor3 = Color3.fromRGB(0 - 0, 0 - 0, 0 - 0);
+	v276.BackgroundTransparency = 1;
+	v276.BorderColor3 = Color3.fromRGB(1248 - (111 + 1137), 158 - (91 + 67), 0 - 0);
+	v276.BorderSizePixel = 0;
+	v276.Position = UDim2.new(0.5 + 0, 0, 0.5, 0);
+	v276.Size = UDim2.new(1, 0, 524 - (423 + 100), 0 + 0);
+	v277.CornerRadius = UDim.new(0, 27 - 17);
+	v277.Parent = v276;
+	v278.Parent = v276;
+	v278.AnchorPoint = Vector2.new(0.5 + 0, 771.5 - (326 + 445));
+	v278.BackgroundColor3 = Color3.fromRGB(1112 - 857, 255, 567 - 312);
+	v278.BackgroundTransparency = 2 - 1;
+	v278.BorderColor3 = Color3.fromRGB(0, 711 - (530 + 181), 0);
+	v278.BorderSizePixel = 0;
+	v278.Position = UDim2.new(0.511805594, 0, 881.5 - (614 + 267), 0);
+	v278.Size = UDim2.new(0.976388991, 32 - (19 + 13), 1, 0);
+	v278.Font = Enum.Font.SourceSansBold;
+	v278.TextColor3 = Color3.fromRGB(414 - 159, 255, 593 - 338);
+	v278.TextSize = 51 - 33;
+	v278.TextWrapped = true;
+	v278.TextXAlignment = Enum.TextXAlignment.Left;
+	v278.Text = v272.Text;
+end;
+v0.AddLabelToAbout = function(v316)
+	local v317 = 0;
+	local v318;
+	local v319;
+	local v320;
+	local v321;
+	local v322;
+	while true do
+		if (v317 == (2 + 3)) then
+			v322.BackgroundColor3 = Color3.fromRGB(448 - 193, 528 - 273, 255);
+			v322.BackgroundTransparency = 1;
+			v322.BorderColor3 = Color3.fromRGB(1812 - (1293 + 519), 0 - 0, 0 - 0);
+			v322.BorderSizePixel = 0 - 0;
+			v322.Position = UDim2.new(0.511805594 - 0, 0, 0.5 - 0, 0 + 0);
+			v322.Size = UDim2.new(0.976388991 + 0, 0, 1, 0 - 0);
+			v317 = 2 + 4;
+		end
+		if (v317 == (2 + 2)) then
+			v320.Position = UDim2.new(0.5 + 0, 1096 - (709 + 387), 1858.5 - (673 + 1185), 0 - 0);
+			v320.Size = UDim2.new(3 - 2, 0 - 0, 1 + 0, 0 + 0);
+			v321.CornerRadius = UDim.new(0, 13 - 3);
+			v321.Parent = v320;
+			v322.Parent = v320;
+			v322.AnchorPoint = Vector2.new(0.5 + 0, 0.5 - 0);
+			v317 = 9 - 4;
+		end
+		if (v317 == (1883 - (446 + 1434))) then
+			v320.Parent = v318;
+			v320.AnchorPoint = Vector2.new(1283.5 - (1040 + 243), 0.5 - 0);
+			v320.BackgroundColor3 = Color3.fromRGB(1847 - (559 + 1288), 0, 1931 - (609 + 1322));
+			v320.BackgroundTransparency = 1;
+			v320.BorderColor3 = Color3.fromRGB(454 - (13 + 441), 0, 0 - 0);
+			v320.BorderSizePixel = 0 - 0;
+			v317 = 19 - 15;
+		end
+		if (v317 == 2) then
+			v318.BorderSizePixel = 0 + 0;
+			v318.Position = UDim2.new(0.325737268, 0 - 0, 6.073633e-8, 0 + 0);
+			v318.Size = UDim2.new(0 + 0, 280, 0 - 0, 60);
+			v319.CornerRadius = UDim.new(0, 6 + 4);
+			v319.Parent = v318;
+			v320.Name = "Content";
+			v317 = 3;
+		end
+		if (v317 == 6) then
+			v322.Font = Enum.Font.SourceSansBold;
+			v322.TextColor3 = Color3.fromRGB(468 - 213, 169 + 86, 255);
+			v322.TextSize = 18;
+			v322.TextWrapped = true;
+			v322.TextXAlignment = Enum.TextXAlignment.Left;
+			v322.Text = v316.Text;
+			break;
+		end
+		if (v317 == (0 + 0)) then
+			v316 = v316 or {};
+			v316.Text = v316.Text or "Text Label";
+			v318 = Instance.new("Frame");
+			v319 = Instance.new("UICorner");
+			v320 = Instance.new("Frame");
+			v321 = Instance.new("UICorner");
+			v317 = 1 + 0;
+		end
+		if (v317 == 1) then
+			v322 = Instance.new("TextLabel");
+			v318.Name = v316.Text;
+			v318.Parent = v1.Content.About;
+			v318.BackgroundColor3 = Color3.fromRGB(0 + 0, 0 + 0, 433 - (153 + 280));
+			v318.BackgroundTransparency = 1;
+			v318.BorderColor3 = Color3.fromRGB(0 - 0, 0, 0 + 0);
+			v317 = 1 + 1;
+		end
+	end
+end;
+v0.CreateButton = function(v323)
+	v323 = v323 or {};
+	v323.Text = v323.Text or "Button Name Here";
+	v323.Function = v323.Function or function()
+	end;
+	local v326 = Instance.new("Frame");
+	local v327 = Instance.new("UICorner");
+	local v328 = Instance.new("Frame");
+	local v329 = Instance.new("UICorner");
+	local v330 = Instance.new("TextLabel");
+	local v331 = Instance.new("ImageLabel");
+	v326.Name = v323.Text;
+	v326.Parent = v2;
+	v326.BackgroundColor3 = Color3.fromRGB(0 + 0, 0 + 0, 0 + 0);
+	v326.BackgroundTransparency = 1;
+	v326.BorderColor3 = Color3.fromRGB(0, 0 - 0, 0 + 0);
+	v326.BorderSizePixel = 667 - (89 + 578);
+	v326.Position = UDim2.new(0.325737268 + 0, 0 - 0, 6.073633e-8, 1049 - (572 + 477));
+	v326.Size = UDim2.new(0, 38 + 242, 0 + 0, 8 + 52);
+	v327.CornerRadius = UDim.new(0, 96 - (84 + 2));
+	v327.Parent = v326;
+	v328.Name = "Content";
+	v328.Parent = v326;
+	v328.AnchorPoint = Vector2.new(0.5 - 0, 0.5 + 0);
+	v328.BackgroundColor3 = Color3.fromRGB(0, 0, 842 - (497 + 345));
+	v328.BackgroundTransparency = 0.8 + 0;
+	v328.BorderColor3 = Color3.fromRGB(0, 0, 0 + 0);
+	v328.BorderSizePixel = 1333 - (605 + 728);
+	v328.Position = UDim2.new(0.5 + 0, 0 - 0, 0.5 + 0, 0 - 0);
+	v328.Size = UDim2.new(1 + 0, 0, 2 - 1, 0);
+	v329.CornerRadius = UDim.new(0 + 0, 10);
+	v329.Parent = v328;
+	v330.Parent = v328;
+	v330.AnchorPoint = Vector2.new(0.5, 489.5 - (457 + 32));
+	v330.BackgroundColor3 = Color3.fromRGB(109 + 146, 1657 - (832 + 570), 241 + 14);
+	v330.BackgroundTransparency = 1;
+	v330.BorderColor3 = Color3.fromRGB(0, 0 + 0, 0);
+	v330.BorderSizePixel = 0 - 0;
+	v330.Position = UDim2.new(0.511805594 + 0, 796 - (588 + 208), 0.5, 0 - 0);
+	v330.Size = UDim2.new(0.976388991, 1800 - (884 + 916), 1 - 0, 0 + 0);
+	v330.Font = Enum.Font.SourceSansBold;
+	v330.TextColor3 = Color3.fromRGB(908 - (232 + 421), 2144 - (1569 + 320), 63 + 192);
+	v330.TextSize = 4 + 14;
+	v330.TextWrapped = true;
+	v330.TextXAlignment = Enum.TextXAlignment.Left;
+	v330.Text = v323.Text;
+	v331.Name = "Logo";
+	v331.Parent = v328;
+	v331.AnchorPoint = Vector2.new(0.5 - 0, 0.5);
+	v331.BackgroundColor3 = Color3.fromRGB(255, 860 - (316 + 289), 667 - 412);
+	v331.BackgroundTransparency = 1 + 0;
+	v331.BorderColor3 = Color3.fromRGB(1453 - (666 + 787), 425 - (360 + 65), 0 + 0);
+	v331.BorderSizePixel = 0;
+	v331.Position = UDim2.new(0.910820961, 254 - (79 + 175), 0.5 - 0, 0 + 0);
+	v331.Size = UDim2.new(0.0783584565 - 0, 0, 0.875 - 0, 0);
+	v331.Image = "rbxassetid://15689064619";
+	v331.ImageColor3 = Color3.fromRGB(899 - (503 + 396), 0, 181 - (92 + 89));
+	v331.ImageTransparency = 0.25;
+	local v381 = false;
+	v326.Content.MouseEnter:Connect(function()
+		local v513 = 0;
+		while true do
+			if (v513 == (0 - 0)) then
+				v381 = true;
+				v3:Create(v326.Content, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0 + 0), {Rotation=math.random(-(2 + 1), 11 - 8),Size=UDim2.new(1.05 + 0, 0, 2.05 - 1, 0),BackgroundColor3=Color3.fromRGB(223 + 32, 122 + 133, 776 - 521)}):Play();
+				break;
+			end
+		end
+	end);
+	v326.Content.MouseLeave:Connect(function()
+		v381 = false;
+		v3:Create(v326.Content, TweenInfo.new(0.25 + 0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0 - 0, false, 1244 - (485 + 759)), {Rotation=(0 - 0),Size=UDim2.new(1, 1189 - (442 + 747), 1, 1135 - (832 + 303)),BackgroundColor3=Color3.fromRGB(946 - (88 + 858), 0 + 0, 0 + 0),BackgroundTransparency=0.8}):Play();
+	end);
+	v4.InputBegan:Connect(function(v514)
+		if ((v514.UserInputType == Enum.UserInputType.MouseButton1) and v381) then
+			local v655 = 0 + 0;
+			while true do
+				if (v655 == (789 - (766 + 23))) then
+					v3:Create(v326.Content, TweenInfo.new(0.3 - 0, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0 - 0, false, 0 - 0), {Size=UDim2.new(0.95 - 0, 0, 1073.95 - (1036 + 37), 0 + 0),BackgroundTransparency=(0.6 - 0)}):Play();
+					v323.Function();
+					break;
+				end
+			end
+		end
+	end);
+	v4.InputEnded:Connect(function(v515)
+		if ((v515.UserInputType == Enum.UserInputType.MouseButton1) and v381) then
+			v3:Create(v326.Content, TweenInfo.new(0.25 + 0, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 1480 - (641 + 839), false, 0), {Size=UDim2.new(914 - (910 + 3), 0 - 0, 1685 - (1466 + 218), 0),BackgroundTransparency=0.8}):Play();
+		end
+	end);
+end;
+v0.CreateToggle = function(v382)
+	local v383 = 0 + 0;
+	local v384;
+	local v385;
+	local v386;
+	local v387;
+	local v388;
+	local v389;
+	local v390;
+	local v391;
+	local v392;
+	local v393;
+	local v394;
+	local v395;
+	local v396;
+	local v397;
+	while true do
+		if (v383 == (1152 - (556 + 592))) then
+			v386.Position = UDim2.new(0.5 + 0, 808 - (329 + 479), 854.5 - (174 + 680), 0);
+			v386.Size = UDim2.new(3 - 2, 0 - 0, 1 + 0, 0);
+			v387.CornerRadius = UDim.new(739 - (396 + 343), 1 + 9);
+			v387.Parent = v386;
+			v388.Parent = v386;
+			v388.AnchorPoint = Vector2.new(1477.5 - (29 + 1448), 1389.5 - (135 + 1254));
+			v388.BackgroundColor3 = Color3.fromRGB(255, 960 - 705, 255);
+			v388.BackgroundTransparency = 4 - 3;
+			v383 = 4 + 1;
+		end
+		if (v383 == 11) then
+			v394.Parent = v389;
+			v396 = false;
+			v397 = false;
+			v384.Content.MouseEnter:Connect(function()
+				local v742 = 1527 - (389 + 1138);
+				while true do
+					if (v742 == (574 - (102 + 472))) then
+						v396 = true;
+						v3:Create(v384.Content, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {Rotation=math.random(-(3 + 0), 3),Size=UDim2.new(1.05 + 0, 0 + 0, 1546.05 - (320 + 1225), 0 - 0),BackgroundColor3=Color3.fromRGB(255, 157 + 98, 1719 - (157 + 1307))}):Play();
+						break;
+					end
+				end
+			end);
+			v384.Content.MouseLeave:Connect(function()
+				local v743 = 1859 - (821 + 1038);
+				while true do
+					if ((0 - 0) == v743) then
+						v396 = false;
+						v3:Create(v384.Content, TweenInfo.new(0.25 + 0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0 - 0, false, 0), {Rotation=(0 + 0),Size=UDim2.new(2 - 1, 1026 - (834 + 192), 1 + 0, 0 + 0),BackgroundColor3=Color3.fromRGB(0 + 0, 0 - 0, 304 - (300 + 4)),BackgroundTransparency=(0.8 + 0)}):Play();
+						break;
+					end
+				end
+			end);
+			v4.InputBegan:Connect(function(v744)
+				if ((v744.UserInputType == Enum.UserInputType.MouseButton1) and v396) then
+					v3:Create(v384.Content, TweenInfo.new(0.3 - 0, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 362 - (112 + 250), false, 0 + 0), {Size=UDim2.new(0.95 - 0, 0 + 0, 0.95, 0 + 0),BackgroundTransparency=(0.6 + 0)}):Play();
+					v382.Function(v397);
+					if not v397 then
+						local v757 = 0 + 0;
+						while true do
+							if (0 == v757) then
+								v397 = true;
+								v3:Create(v390, TweenInfo.new(0.3 + 0, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 1414 - (1001 + 413), false, 0), {Position=UDim2.new(0.767 - 0, 0, 882.5 - (244 + 638), 693 - (627 + 66)),BackgroundTransparency=0,BackgroundColor3=Color3.fromRGB(443 - 294, 255, 651 - (512 + 90))}):Play();
+								v757 = 1907 - (1665 + 241);
+							end
+							if (v757 == (718 - (373 + 344))) then
+								v3:Create(v395, TweenInfo.new(0.3 + 0, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0 + 0, false, 0 - 0), {Transparency=(0 - 0),Color=Color3.fromRGB(1354 - (35 + 1064), 255, 186 + 69)}):Play();
+								break;
+							end
+						end
+					else
+						local v758 = 0;
+						while true do
+							if (v758 == 1) then
+								v3:Create(v395, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0 - 0, false, 0), {Transparency=(0.45 + 0),Color=Color3.fromRGB(1491 - (298 + 938), 1514 - (233 + 1026), 1921 - (636 + 1030))}):Play();
+								break;
+							end
+							if (v758 == 0) then
+								v397 = false;
+								v3:Create(v390, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0 + 0, false, 0 + 0), {Position=UDim2.new(0.236 + 0, 0, 0.5 + 0, 221 - (55 + 166)),BackgroundTransparency=(0.25 + 0),BackgroundColor3=Color3.fromRGB(26 + 229, 973 - 718, 552 - (36 + 261))}):Play();
+								v758 = 1 - 0;
+							end
+						end
+					end
+				end
+			end);
+			v4.InputEnded:Connect(function(v745)
+				if ((v745.UserInputType == Enum.UserInputType.MouseButton1) and v396) then
+					v3:Create(v384.Content, TweenInfo.new(1368.25 - (34 + 1334), Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0 + 0, false, 0 + 0), {Size=UDim2.new(1284 - (1035 + 248), 0, 22 - (20 + 1), 0 + 0),BackgroundTransparency=0.8}):Play();
+				end
+			end);
+			break;
+		end
+		if (v383 == 0) then
+			v382 = v382 or {};
+			v382.Text = v382.Text or "Your Text Here";
+			v382.Function = v382.Function or function()
+			end;
+			v384 = Instance.new("Frame");
+			v385 = Instance.new("UICorner");
+			v386 = Instance.new("Frame");
+			v387 = Instance.new("UICorner");
+			v388 = Instance.new("TextLabel");
+			v383 = 320 - (134 + 185);
+		end
+		if (v383 == (1143 - (549 + 584))) then
+			v392.BorderColor3 = Color3.fromRGB(0, 685 - (314 + 371), 0);
+			v392.BorderSizePixel = 0 - 0;
+			v392.Position = UDim2.new(968.5 - (478 + 490), 0, 0.5 + 0, 0);
+			v392.Size = UDim2.new(1173 - (786 + 386), 0 - 0, 1380 - (1055 + 324), 0);
+			v392.ZIndex = 1340 - (1093 + 247);
+			v393.CornerRadius = UDim.new(1, 0 + 0);
+			v393.Parent = v392;
+			v394.CornerRadius = UDim.new(1, 0 + 0);
+			v383 = 11;
+		end
+		if (v383 == 6) then
+			v388.TextXAlignment = Enum.TextXAlignment.Left;
+			v388.Text = v382.Text;
+			v389.Name = "Outline";
+			v389.Parent = v386;
+			v389.AnchorPoint = Vector2.new(0.5, 0.5);
+			v389.BackgroundColor3 = Color3.fromRGB(1012 - 757, 255, 865 - 610);
+			v389.BackgroundTransparency = 1;
+			v389.BorderColor3 = Color3.fromRGB(0 - 0, 0 - 0, 0);
+			v383 = 3 + 4;
+		end
+		if (v383 == (26 - 19)) then
+			v389.BorderSizePixel = 0 - 0;
+			v389.Position = UDim2.new(0.896527767, 0, 0.499999881, 0 + 0);
+			v389.Size = UDim2.new(0.154166669 - 0, 688 - (364 + 324), 0.799999952 - 0, 0);
+			v395.Name = "UIStroke";
+			v395.Parent = v389;
+			v395.Color = Color3.fromRGB(255, 255, 255);
+			v395.Thickness = 4 - 2;
+			v395.Transparency = 0.45 + 0;
+			v383 = 33 - 25;
+		end
+		if (v383 == (13 - 4)) then
+			v390.Size = UDim2.new(0.422094226, 0 - 0, 1268.910937548 - (1249 + 19), 0);
+			v391.CornerRadius = UDim.new(1 + 0, 0 - 0);
+			v391.Parent = v390;
+			v392.Name = "Background";
+			v392.Parent = v389;
+			v392.AnchorPoint = Vector2.new(1086.5 - (686 + 400), 0.5);
+			v392.BackgroundColor3 = Color3.fromRGB(0 + 0, 229 - (73 + 156), 0 + 0);
+			v392.BackgroundTransparency = 0.6;
+			v383 = 821 - (721 + 90);
+		end
+		if (v383 == (1 + 0)) then
+			v389 = Instance.new("Frame");
+			v390 = Instance.new("Frame");
+			v391 = Instance.new("UICorner");
+			v392 = Instance.new("Frame");
+			v393 = Instance.new("UICorner");
+			v394 = Instance.new("UICorner");
+			v395 = Instance.new("UIStroke");
+			v384.Name = v382.Text;
+			v383 = 2;
+		end
+		if (v383 == 2) then
+			v384.Parent = v2;
+			v384.BackgroundColor3 = Color3.fromRGB(0, 0, 0);
+			v384.BackgroundTransparency = 1;
+			v384.BorderColor3 = Color3.fromRGB(0 - 0, 0, 470 - (224 + 246));
+			v384.BorderSizePixel = 0 - 0;
+			v384.Position = UDim2.new(0.325737268 - 0, 0, 6.073633e-8 + 0, 0);
+			v384.Size = UDim2.new(0, 7 + 273, 0 + 0, 119 - 59);
+			v385.CornerRadius = UDim.new(0 - 0, 523 - (203 + 310));
+			v383 = 1996 - (1238 + 755);
+		end
+		if (v383 == (1 + 7)) then
+			v390.Name = "Ball";
+			v390.Parent = v389;
+			v390.AnchorPoint = Vector2.new(1534.5 - (709 + 825), 0.5);
+			v390.BackgroundColor3 = Color3.fromRGB(469 - 214, 371 - 116, 1119 - (196 + 668));
+			v390.BackgroundTransparency = 0.25;
+			v390.BorderColor3 = Color3.fromRGB(0 - 0, 0 - 0, 0);
+			v390.BorderSizePixel = 833 - (171 + 662);
+			v390.Position = UDim2.new(93.236000001 - (4 + 89), 0 - 0, 0.5, 0);
+			v383 = 4 + 5;
+		end
+		if ((13 - 10) == v383) then
+			v385.Parent = v384;
+			v386.Name = "Content";
+			v386.Parent = v384;
+			v386.AnchorPoint = Vector2.new(0.5 + 0, 1486.5 - (35 + 1451));
+			v386.BackgroundColor3 = Color3.fromRGB(0, 1453 - (28 + 1425), 1993 - (941 + 1052));
+			v386.BackgroundTransparency = 0.8 + 0;
+			v386.BorderColor3 = Color3.fromRGB(1514 - (822 + 692), 0, 0 - 0);
+			v386.BorderSizePixel = 0;
+			v383 = 2 + 2;
+		end
+		if ((302 - (45 + 252)) == v383) then
+			v388.BorderColor3 = Color3.fromRGB(0, 0, 0 + 0);
+			v388.BorderSizePixel = 0;
+			v388.Position = UDim2.new(0.511805594 + 0, 0 - 0, 0.5, 433 - (114 + 319));
+			v388.Size = UDim2.new(0.976388991, 0, 1, 0 - 0);
+			v388.Font = Enum.Font.SourceSansBold;
+			v388.TextColor3 = Color3.fromRGB(255, 326 - 71, 163 + 92);
+			v388.TextSize = 18;
+			v388.TextWrapped = true;
+			v383 = 8 - 2;
+		end
+	end
+end;
+v0.CreateSlider = function(v398)
+	v398 = v398 or {};
+	v398.Text = v398.Text or "Slider Name Here";
+	v398.MinimumValue = v398.MinimumValue or (1 - 0);
+	v398.MaximumValue = v398.MaximumValue or (2063 - (556 + 1407));
+	v398.DefaultValue = v398.DefaultValue or 50;
+	v398.Function = v398.Function or function()
+	end;
+	local v404 = Instance.new("Frame");
+	local v405 = Instance.new("UICorner");
+	local v406 = Instance.new("Frame");
+	local v407 = Instance.new("UICorner");
+	local v408 = Instance.new("TextLabel");
+	local v409 = Instance.new("Frame");
+	local v410 = Instance.new("UICorner");
+	local v411 = Instance.new("Frame");
+	local v412 = Instance.new("UICorner");
+	local v413 = Instance.new("TextLabel");
+	local v414 = Instance.new("UICorner");
+	v404.Name = v398.Text;
+	v404.Parent = v2;
+	v404.BackgroundColor3 = Color3.fromRGB(1206 - (741 + 465), 465 - (170 + 295), 0 + 0);
+	v404.BackgroundTransparency = 1;
+	v404.BorderColor3 = Color3.fromRGB(0 + 0, 0, 0);
+	v404.BorderSizePixel = 0 - 0;
+	v404.Position = UDim2.new(0.325737268 + 0, 0 + 0, 6.073633e-8, 0 + 0);
+	v404.Size = UDim2.new(1230 - (957 + 273), 280, 0 + 0, 60);
+	v405.CornerRadius = UDim.new(0, 10);
+	v405.Parent = v404;
+	v406.Name = "Content";
+	v406.Parent = v404;
+	v406.AnchorPoint = Vector2.new(0.5 + 0, 0.5 - 0);
+	v406.BackgroundColor3 = Color3.fromRGB(0, 0, 0 - 0);
+	v406.BackgroundTransparency = 0.8 - 0;
+	v406.BorderColor3 = Color3.fromRGB(0 - 0, 0, 0);
+	v406.BorderSizePixel = 1780 - (389 + 1391);
+	v406.Position = UDim2.new(0.5 + 0, 0, 0.5, 0 + 0);
+	v406.Size = UDim2.new(2 - 1, 951 - (783 + 168), 3 - 2, 0);
+	v407.CornerRadius = UDim.new(0 + 0, 10);
+	v407.Parent = v406;
+	v408.Parent = v406;
+	v408.AnchorPoint = Vector2.new(0.5, 311.5 - (309 + 2));
+	v408.BackgroundColor3 = Color3.fromRGB(783 - 528, 1467 - (1090 + 122), 255);
+	v408.BackgroundTransparency = 1 + 0;
+	v408.BorderColor3 = Color3.fromRGB(0, 0 - 0, 0);
+	v408.BorderSizePixel = 0 + 0;
+	v408.Position = UDim2.new(1118.511805594 - (628 + 490), 0 + 0, 0.5 - 0, 0);
+	v408.Size = UDim2.new(0.976388991 - 0, 774 - (431 + 343), 1, 0 - 0);
+	v408.Font = Enum.Font.SourceSansBold;
+	v408.TextColor3 = Color3.fromRGB(255, 737 - 482, 202 + 53);
+	v408.TextSize = 18;
+	v408.TextWrapped = true;
+	v408.TextXAlignment = Enum.TextXAlignment.Left;
+	v408.Text = v398.Text;
+	v409.Name = "Slider";
+	v409.Parent = v406;
+	v409.AnchorPoint = Vector2.new(0.5 + 0, 0.5);
+	v409.BackgroundColor3 = Color3.fromRGB(0, 1695 - (556 + 1139), 0);
+	v409.BackgroundTransparency = 0.6;
+	v409.BorderColor3 = Color3.fromRGB(0, 15 - (6 + 9), 0 + 0);
+	v409.BorderSizePixel = 0;
+	v409.ClipsDescendants = true;
+	v409.Position = UDim2.new(0.699999988 + 0, 0, 169.497395754 - (28 + 141), 0 + 0);
+	v409.Size = UDim2.new(0.361111104, 0, 0.543749988, 0 - 0);
+	v410.CornerRadius = UDim.new(1 + 0, 0);
+	v410.Parent = v409;
+	v411.Name = "Fill";
+	v411.Parent = v409;
+	v411.BackgroundColor3 = Color3.fromRGB(1572 - (486 + 831), 255, 663 - 408);
+	v411.BorderColor3 = Color3.fromRGB(0, 0 - 0, 0 + 0);
+	v411.BorderSizePixel = 0 - 0;
+	v411.Size = UDim2.new(1264 - (668 + 595), 0, 1.00000012 + 0, 0);
+	v411.ClipsDescendants = true;
+	v412.CornerRadius = UDim.new(1 + 0, 0 - 0);
+	v412.Parent = v411;
+	v413.Name = "OutputValue";
+	v413.Parent = v406;
+	v413.BackgroundColor3 = Color3.fromRGB(0, 0, 290 - (23 + 267));
+	v413.BackgroundTransparency = 1944.7 - (1129 + 815);
+	v413.BorderColor3 = Color3.fromRGB(387 - (371 + 16), 1750 - (1326 + 424), 0);
+	v413.BorderSizePixel = 0;
+	v413.Position = UDim2.new(0.905555546 - 0, 0 - 0, 0.142187595, 118 - (88 + 30));
+	v413.Size = UDim2.new(771.0611111112 - (720 + 51), 0, 0.699999809 - 0, 0);
+	v413.Font = Enum.Font.SourceSansBold;
+	v413.Text = "14";
+	v413.TextColor3 = Color3.fromRGB(2031 - (421 + 1355), 255, 255);
+	v413.TextSize = 22 - 8;
+	v413.TextTransparency = 0.3;
+	v414.CornerRadius = UDim.new(0 + 0, 6);
+	v414.Parent = v413;
+	local v488 = game.Players.LocalPlayer:GetMouse();
+	local v489 = v409;
+	local v411 = v411;
+	local v490 = v413;
+	local v491 = v398.MaximumValue / 100;
+	local v492 = v398.MinimumValue / (1183 - (286 + 797));
+	local v493 = false;
+	local v494 = false;
+	local v495 = v398.DefaultValue / (365 - 265);
+	v490.Text = tostring(math.round(v495 * (165 - 65)));
+	local v497 = math.round(v495 + (539 - (397 + 42)));
+	v411.Size = UDim2.fromScale((((v495 - v492) * (1 - (0 + 0))) / (v491 - v492)) + 0, 801 - (24 + 776));
+	v489.MouseEnter:Connect(function()
+		v494 = true;
+	end);
+	v489.MouseLeave:Connect(function()
+		v494 = false;
+	end);
+	v404.MouseEnter:Connect(function()
+		v3:Create(v489.Parent, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0 - 0, false, 785 - (222 + 563)), {BackgroundColor3=Color3.fromRGB(561 - 306, 184 + 71, 255),BackgroundTransparency=(190.6 - (23 + 167))}):Play();
+	end);
+	v404.MouseLeave:Connect(function()
+		v3:Create(v489.Parent, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 1798 - (690 + 1108), false, 0), {BackgroundColor3=Color3.fromRGB(0, 0 + 0, 0 + 0),BackgroundTransparency=(848.8 - (40 + 808))}):Play();
+	end);
+	local v498 = function()
+		local v516 = 0 + 0;
+		local v517;
+		local v518;
+		while true do
+			if ((11 - 8) == v516) then
+				v398.Function(v497);
+				break;
+			end
+			if (v516 == 1) then
+				if (v517 ~= v518) then
+					v3:Create(v411, TweenInfo.new(0.2 + 0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0 + 0, false, 0 + 0), {Size=UDim2.fromScale(v517, 572 - (47 + 524))}):Play();
+				end
+				v495 = v518;
+				v516 = 2;
+			end
+			if (v516 == (2 + 0)) then
+				v490.Text = tostring(math.round(v495 * (273 - 173)));
+				v497 = math.round(v518 * (149 - 49));
+				v516 = 6 - 3;
+			end
+			if (v516 == 0) then
+				v517 = math.clamp(((Vector2.new(v488.X, v488.Y) - v489.AbsolutePosition) / v489.AbsoluteSize).X, 0, 1727 - (1165 + 561));
+				v518 = v492 + (v517 * (v491 - v492));
+				v516 = 1 + 0;
+			end
+		end
+	end;
+	local v499 = function()
+		local v519 = 0;
+		while true do
+			if (v519 == (0 - 0)) then
+				v493 = true;
+				while v493 do
+					local v752 = 0;
+					while true do
+						if (v752 == 0) then
+							v498();
+							task.wait();
+							break;
+						end
+					end
+				end
+				break;
+			end
+		end
+	end;
+	v4.InputBegan:Connect(function(v520)
+		if ((v520.UserInputType == Enum.UserInputType.MouseButton1) and v494) then
+			v499();
+		end
+	end);
+	v4.InputEnded:Connect(function(v521)
+		if (v521.UserInputType == Enum.UserInputType.MouseButton1) then
+			v493 = false;
+		end
+	end);
+end;
+v0.ChangeScale = function(v500)
+	v1.Parent.Parent:FindFirstChildWhichIsA("UIScale").Scale = v500;
+end;
+return v0;
