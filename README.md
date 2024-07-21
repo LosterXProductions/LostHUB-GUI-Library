@@ -11,16 +11,16 @@ Latest and Past updates to LostHUB
 - Rework the minimize button.
 - Rework the smoothing of the frame dragging animation.
 ```
-### Stable v1.0.2
+### Alpha v1.0.2
 ```
 - Fixed UI not Closing Properly
 - Added the Slider
 ```
-### Stable v1.0.1
+### Alpha v1.0.1
 ```
 - Fixed UI not opening due to a CoreGui glitch
 ```
-### Stable v1.0.0
+### Alpha v1.0.0
 ```
 - Official Release of LostHUB
 ```
