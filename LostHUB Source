@@ -1,1326 +1,1154 @@
-local v0 = {};
-local v1 = nil;
-local v2 = nil;
-local v3 = game:GetService("TweenService");
-local v4 = game:GetService("UserInputService");
-v0.NotifyLocalPlayer = function(v14)
-	local v15 = 0 + 0;
-	local v16;
-	local v17;
-	local v18;
-	local v19;
-	local v20;
-	local v21;
-	local v22;
-	local v23;
-	local v24;
-	while true do
-		if (v15 == (1195 - (352 + 842))) then
-			v21 = Instance.new("UICorner");
-			v22 = Instance.new("TextLabel");
-			v16.Name = "Notification";
-			v16.Parent = v1.Parent.Parent;
-			v16.AnchorPoint = Vector2.new(0.5 - 0, 1821 - (1483 + 338));
-			v16.BackgroundColor3 = Color3.fromRGB(1950 - (1229 + 466), 833 - (386 + 192), 1461 - (696 + 510));
-			v16.BackgroundTransparency = 1;
-			v15 = 3 - 1;
-		end
-		if (v15 == (1271 - (1091 + 171))) then
-			v22.BorderSizePixel = 0 + 0;
-			v22.Position = UDim2.new(0.5 - 0, 0 - 0, 374.5 - (123 + 251), 0 - 0);
-			v22.Size = UDim2.new(698.5 - (208 + 490), 0 + 0, 0.5 + 0, 0);
-			v22.Font = Enum.Font.SourceSansBold;
-			v22.Text = "OK";
-			v22.TextColor3 = Color3.fromRGB(1091 - (660 + 176), 31 + 224, 457 - (14 + 188));
-			v22.TextScaled = true;
-			v15 = 685 - (534 + 141);
-		end
-		if (v15 == (4 + 4)) then
-			v20.Size = UDim2.new(0 + 0, 45 + 1, 0, 64 - 33);
-			v21.Parent = v20;
-			v22.Parent = v20;
-			v22.AnchorPoint = Vector2.new(0.5 - 0, 0.5 - 0);
-			v22.BackgroundColor3 = Color3.fromRGB(255, 255, 137 + 118);
-			v22.BackgroundTransparency = 1;
-			v22.BorderColor3 = Color3.fromRGB(0 + 0, 0, 0);
-			v15 = 405 - (115 + 281);
-		end
-		if (v15 == (15 - 8)) then
-			v20.Parent = v17;
-			v20.AnchorPoint = Vector2.new(0.5, 0.5 + 0);
-			v20.BackgroundColor3 = Color3.fromRGB(616 - 361, 935 - 680, 1122 - (550 + 317));
-			v20.BackgroundTransparency = 0.8 - 0;
-			v20.BorderColor3 = Color3.fromRGB(0 - 0, 0 - 0, 0);
-			v20.BorderSizePixel = 285 - (134 + 151);
-			v20.Position = UDim2.new(1665 - (970 + 695), 797 - 379, 1990 - (582 + 1408), 277 - 197);
-			v15 = 9 - 1;
-		end
-		if (v15 == (11 - 8)) then
-			v17.BackgroundColor3 = Color3.fromRGB(1917 - (1195 + 629), 0 - 0, 426 - (187 + 54));
-			v17.BackgroundTransparency = 780.25 - (162 + 618);
-			v17.BorderColor3 = Color3.fromRGB(0 + 0, 0, 0 + 0);
-			v17.BorderSizePixel = 0 - 0;
-			v17.ClipsDescendants = true;
-			v17.Position = UDim2.new(0.5 - 0, 0 + 0, 1636.32838285 - (1373 + 263), 1000 - (451 + 549));
-			v17.Size = UDim2.new(0, 143 + 307, 0 - 0, 63);
-			v15 = 6 - 2;
-		end
-		if (v15 == (1390 - (746 + 638))) then
-			v19.TextSize = 10 + 14;
-			v19.TextStrokeTransparency = 0.2 - 0;
-			v19.TextTransparency = 0.2;
-			v19.TextWrapped = true;
-			v19.TextXAlignment = Enum.TextXAlignment.Left;
-			v19.TextYAlignment = Enum.TextYAlignment.Top;
-			v20.Name = "BTN";
-			v15 = 348 - (218 + 123);
-		end
-		if ((1586 - (1535 + 46)) == v15) then
-			v19.BorderColor3 = Color3.fromRGB(0, 0, 0);
-			v19.BorderSizePixel = 0;
-			v19.Position = UDim2.new(0, 225, 0, 32 + 0);
-			v19.Size = UDim2.new(0, 63 + 368, 0, 50);
-			v19.Font = Enum.Font.SourceSansBold;
-			v19.Text = v14.Text;
-			v19.TextColor3 = Color3.fromRGB(815 - (306 + 254), 16 + 239, 255);
-			v15 = 11 - 5;
-		end
-		if (v15 == (1467 - (899 + 568))) then
-			v14 = v14 or {};
-			v14.Text = v14.Text or "Your notification text goes here!";
-			v16 = Instance.new("ImageLabel");
-			v17 = Instance.new("Frame");
-			v18 = Instance.new("UICorner");
-			v19 = Instance.new("TextLabel");
-			v20 = Instance.new("Frame");
-			v15 = 1 + 0;
-		end
-		if (v15 == (26 - 15)) then
-			v23.MouseEnter:Connect(function()
-				v3:Create(v23, TweenInfo.new(603.45 - (268 + 335), Enum.EasingStyle.Quart, Enum.EasingDirection.Out, 290 - (60 + 230), false, 0), {Size=UDim2.new(572 - (426 + 146), 54 + 396, 1456 - (282 + 1174), 913 - (569 + 242))}):Play();
-			end);
-			v23.MouseLeave:Connect(function()
-				v3:Create(v23, TweenInfo.new(0.45 - 0, Enum.EasingStyle.Quart, Enum.EasingDirection.Out, 0, false, 0 + 0), {Size=UDim2.new(1024 - (706 + 318), 1701 - (721 + 530), 0, 1334 - (945 + 326))}):Play();
-			end);
-			v23.BTN.MouseEnter:Connect(function()
-				v3:Create(v23.BTN, TweenInfo.new(0.25 - 0, Enum.EasingStyle.Quart, Enum.EasingDirection.Out, 0 + 0, false, 700 - (271 + 429)), {Size=UDim2.new(0, 54, 0, 35 + 3),Rotation=math.random(-15, 1515 - (1408 + 92)),BackgroundTransparency=(1086.6 - (461 + 625))}):Play();
-				v24 = true;
-			end);
-			v23.BTN.MouseLeave:Connect(function()
-				local v715 = 0;
-				while true do
-					if (v715 == (1288 - (993 + 295))) then
-						v3:Create(v23.BTN, TweenInfo.new(0.25 + 0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 1171 - (418 + 753)), {Size=UDim2.new(0, 18 + 28, 0 + 0, 10 + 21),Rotation=0,BackgroundTransparency=(0.8 + 0)}):Play();
-						v24 = false;
-						break;
-					end
-				end
-			end);
-			v4.InputBegan:Connect(function(v716)
-				if ((v716.UserInputType == Enum.UserInputType.MouseButton1) and v24) then
-					v3:Create(v23.BTN, TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 529 - (406 + 123)), {Size=UDim2.new(1769 - (1749 + 20), 10 + 30, 1322 - (1249 + 73), 27),BackgroundTransparency=(0.9 + 0)}):Play();
-					v3:Create(v23.Parent, TweenInfo.new(0.45, Enum.EasingStyle.Quart, Enum.EasingDirection.In, 1145 - (466 + 679), false, 0 - 0), {Position=UDim2.new(0.5, 0 - 0, -(1900.5 - (106 + 1794)), 0 + 0)}):Play();
-				end
-			end);
-			v4.InputEnded:Connect(function(v717)
-				if ((v717.UserInputType == Enum.UserInputType.MouseButton1) and v24) then
-					v3:Create(v23.BTN, TweenInfo.new(0.25 + 0, Enum.EasingStyle.Quart, Enum.EasingDirection.Out, 0, false, 0 - 0), {Size=UDim2.new(0 - 0, 54, 114 - (4 + 110), 622 - (57 + 527)),BackgroundTransparency=0.6}):Play();
-				end
-			end);
-			break;
-		end
-		if (v15 == (1431 - (41 + 1386))) then
-			v18.CornerRadius = UDim.new(103 - (17 + 86), 13 + 5);
-			v18.Parent = v17;
-			v19.Name = "PromptText";
-			v19.Parent = v17;
-			v19.AnchorPoint = Vector2.new(0.5, 0.5);
-			v19.BackgroundColor3 = Color3.fromRGB(568 - 313, 255, 255);
-			v19.BackgroundTransparency = 2 - 1;
-			v15 = 171 - (122 + 44);
-		end
-		if (v15 == (2 - 0)) then
-			v16.BorderColor3 = Color3.fromRGB(0 - 0, 0 + 0, 0 + 0);
-			v16.BorderSizePixel = 0 - 0;
-			v16.Position = UDim2.new(65.5 - (30 + 35), 0 + 0, -(1257.0725509971 - (1043 + 214)), 0);
-			v16.Size = UDim2.new(0 - 0, 2012 - (323 + 889), 0, 815 - 512);
-			v17.Name = "Content";
-			v17.Parent = v16;
-			v17.AnchorPoint = Vector2.new(580.5 - (361 + 219), 320 - (53 + 267));
-			v15 = 1 + 2;
-		end
-		if (v15 == (423 - (15 + 398))) then
-			v22.TextSize = 996 - (18 + 964);
-			v22.TextTransparency = 0.25 - 0;
-			v22.TextWrapped = true;
-			v23 = v17;
-			v24 = false;
-			v23.Parent.Position = UDim2.new(0.5 + 0, 0 + 0, -0.5, 850 - (20 + 830));
-			v3:Create(v23.Parent, TweenInfo.new(0.75, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0 + 0, false, 0), {Position=UDim2.new(126.5 - (116 + 10), 0, 0.005 + 0, 738 - (542 + 196))}):Play();
-			v15 = 23 - 12;
-		end
+local GUI = {}
+
+local MainUI = nil
+local CurrentContent = nil
+
+local TweenService = game:GetService("TweenService")
+local UIS = game:GetService("UserInputService")
+
+local UIVersion = "Beta - v1.1.1"
+
+GUI.CheckIfExecuted = function(UIName, func)
+	if game.CoreGui:FindFirstChild(UIName) then
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "UI Already Open",
+			Text = UIName .. " has already been found in CoreGui rendering it as open.", -- Required
+		})	
+		return
+	else
+		func()
 	end
-end;
-v0.CreateUI = function(v25)
-	local v26 = 0 + 0;
-	local v27;
-	local v28;
-	local v29;
-	local v30;
-	local v31;
-	local v32;
-	local v33;
-	local v34;
-	local v35;
-	local v36;
-	local v37;
-	local v38;
-	local v39;
-	local v40;
-	local v41;
-	local v42;
-	local v43;
-	local v44;
-	local v45;
-	local v46;
-	local v47;
-	local v48;
-	local v49;
-	local v50;
-	while true do
-		if (v26 == (8 + 6)) then
-			v41.Size = UDim2.new(0 + 0, 263 - 163, 0 - 0, 1651 - (1126 + 425));
-			v42.CornerRadius = UDim.new(405 - (118 + 287), 10);
-			v42.Parent = v41;
-			v43.Name = "Content";
-			v43.Parent = v41;
-			v43.AnchorPoint = Vector2.new(0.5 - 0, 1121.5 - (118 + 1003));
-			v43.BackgroundColor3 = Color3.fromRGB(0 - 0, 377 - (142 + 235), 0);
-			v43.BackgroundTransparency = 0.8 - 0;
-			v43.BorderColor3 = Color3.fromRGB(0 + 0, 977 - (553 + 424), 0);
-			v26 = 28 - 13;
+end
+
+GUI.ReturnCurrentUIVersion = function()
+	return UIVersion
+end
+
+GUI.NotifyLocalPlayer = function(NotifySettings)
+	NotifySettings = NotifySettings or {}
+	NotifySettings.Text = NotifySettings.Text or "Your notification text goes here!"
+	
+	-- Instances:
+
+	local Notification = Instance.new("ImageLabel")
+	local Content = Instance.new("Frame")
+	local UICorner = Instance.new("UICorner")
+	local PromptText = Instance.new("TextLabel")
+	local BTN = Instance.new("Frame")
+	local UICorner_2 = Instance.new("UICorner")
+	local TextLabel = Instance.new("TextLabel")
+
+	--Properties:
+
+	Notification.Name = "Notification"
+	Notification.Parent = MainUI.Parent.Parent
+	Notification.AnchorPoint = Vector2.new(0.5, 0)
+	Notification.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Notification.BackgroundTransparency = 1.000
+	Notification.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Notification.BorderSizePixel = 0
+	Notification.Position = UDim2.new(0.5, 0, -0.0725509971, 0)
+	Notification.Size = UDim2.new(0, 800, 0, 303)
+
+	Content.Name = "Content"
+	Content.Parent = Notification
+	Content.AnchorPoint = Vector2.new(0.5, 0)
+	Content.BackgroundColor3 = Color3.fromRGB(93, 0, 185)
+	Content.BackgroundTransparency = 0.250
+	Content.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Content.BorderSizePixel = 0
+	Content.ClipsDescendants = true
+	Content.Position = UDim2.new(0.5, 0, 0.32838285, 0)
+	Content.Size = UDim2.new(0, 450, 0, 63)
+
+	UICorner.CornerRadius = UDim.new(0, 18)
+	UICorner.Parent = Content
+
+	PromptText.Name = "PromptText"
+	PromptText.Parent = Content
+	PromptText.AnchorPoint = Vector2.new(0.5, 0.5)
+	PromptText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	PromptText.BackgroundTransparency = 1.000
+	PromptText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	PromptText.BorderSizePixel = 0
+	PromptText.Position = UDim2.new(0, 225, 0, 32)
+	PromptText.Size = UDim2.new(0, 431, 0, 50)
+	PromptText.Font = Enum.Font.SourceSansBold
+	PromptText.Text = NotifySettings.Text
+	PromptText.TextColor3 = Color3.fromRGB(255, 255, 255)
+	PromptText.TextSize = 24.000
+	PromptText.TextStrokeTransparency = 0.200
+	PromptText.TextTransparency = 0.200
+	PromptText.TextWrapped = true
+	PromptText.TextXAlignment = Enum.TextXAlignment.Left
+	PromptText.TextYAlignment = Enum.TextYAlignment.Top
+
+	BTN.Name = "BTN"
+	BTN.Parent = Content
+	BTN.AnchorPoint = Vector2.new(0.5, 0.5)
+	BTN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	BTN.BackgroundTransparency = 0.800
+	BTN.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	BTN.BorderSizePixel = 0
+	BTN.Position = UDim2.new(0, 418, 0, 80)
+	BTN.Size = UDim2.new(0, 46, 0, 31)
+
+	UICorner_2.Parent = BTN
+
+	TextLabel.Parent = BTN
+	TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel.BorderSizePixel = 0
+	TextLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+	TextLabel.Size = UDim2.new(0.5, 0, 0.5, 0)
+	TextLabel.Font = Enum.Font.SourceSansBold
+	TextLabel.Text = "OK"
+	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.TextScaled = true
+	TextLabel.TextSize = 14.000
+	TextLabel.TextTransparency = 0.250
+	TextLabel.TextWrapped = true
+
+	local NotiFrame = Content
+	local MouseHover = false
+
+	NotiFrame.Parent.Position = UDim2.new(0.5, 0, -0.5, 0)
+
+	TweenService:Create(NotiFrame.Parent, TweenInfo.new(0.75, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Position = UDim2.new(0.5, 0, 0.005, 0)}):Play()
+
+	NotiFrame.MouseEnter:Connect(function()
+		TweenService:Create(NotiFrame, TweenInfo.new(0.45, Enum.EasingStyle.Quart, Enum.EasingDirection.Out, 0, false, 0), {Size = UDim2.new(0, 450, 0, 102)}):Play()
+	end)
+
+	NotiFrame.MouseLeave:Connect(function()
+		TweenService:Create(NotiFrame, TweenInfo.new(0.45, Enum.EasingStyle.Quart, Enum.EasingDirection.Out, 0, false, 0), {Size = UDim2.new(0, 450, 0, 63)}):Play()
+	end)
+
+	NotiFrame.BTN.MouseEnter:Connect(function()
+		TweenService:Create(NotiFrame.BTN, TweenInfo.new(0.25, Enum.EasingStyle.Quart, Enum.EasingDirection.Out, 0, false, 0), {Size = UDim2.new(0, 54, 0, 38), Rotation = math.random(-15, 15), BackgroundTransparency = 0.6}):Play()
+		MouseHover = true
+	end)
+
+	NotiFrame.BTN.MouseLeave:Connect(function()
+		TweenService:Create(NotiFrame.BTN, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {Size = UDim2.new(0, 46, 0, 31), Rotation = 0, BackgroundTransparency = 0.8}):Play()
+		MouseHover = false
+	end)
+
+	UIS.InputBegan:Connect(function(Key)
+		if Key.UserInputType == Enum.UserInputType.MouseButton1 and MouseHover then
+			TweenService:Create(NotiFrame.BTN, TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {Size = UDim2.new(0, 40, 0, 27), BackgroundTransparency = 0.9}):Play()
+			TweenService:Create(NotiFrame.Parent, TweenInfo.new(0.45, Enum.EasingStyle.Quart, Enum.EasingDirection.In, 0, false, 0), {Position = UDim2.new(0.5, 0, -0.5, 0)}):Play()
 		end
-		if (v26 == 1) then
-			v32 = Instance.new("ImageLabel");
-			v33 = Instance.new("Frame");
-			v34 = Instance.new("UICorner");
-			v35 = Instance.new("ScrollingFrame");
-			v36 = Instance.new("UIGridLayout");
-			v37 = Instance.new("Frame");
-			v38 = Instance.new("UICorner");
-			v39 = Instance.new("ScrollingFrame");
-			v40 = Instance.new("UIGridLayout");
-			v26 = 2 + 0;
+	end)
+
+	UIS.InputEnded:Connect(function(Key)
+		if Key.UserInputType == Enum.UserInputType.MouseButton1 and MouseHover then
+			TweenService:Create(NotiFrame.BTN, TweenInfo.new(0.25, Enum.EasingStyle.Quart, Enum.EasingDirection.Out, 0, false, 0), {Size = UDim2.new(0, 54, 0, 38), BackgroundTransparency = 0.6}):Play()
 		end
-		if (v26 == (18 + 0)) then
-			v46.TextColor3 = Color3.fromRGB(255, 255, 149 + 106);
-			v46.TextSize = 14 + 18;
-			v46.TextStrokeTransparency = 0;
-			v47.Name = "MinBTN";
-			v47.Parent = v30;
-			v47.BackgroundColor3 = Color3.fromRGB(146 + 109, 552 - 297, 255);
-			v47.BackgroundTransparency = 2 - 1;
-			v47.BorderColor3 = Color3.fromRGB(0 - 0, 0 + 0, 0);
-			v47.BorderSizePixel = 0;
-			v26 = 91 - 72;
-		end
-		if (v26 == 0) then
-			v25 = v25 or {};
-			v25.Image = v25.Image or "18544048114";
-			v25.Name = v25.Name or "Your Hub Name";
-			v25.BackgroundColor = v25.BackgroundColor or Color3.fromRGB(846 - (239 + 514), 0 + 0, 1515 - (797 + 532));
-			v27 = Instance.new("ScreenGui");
-			v28 = Instance.new("UIScale");
-			v29 = Instance.new("ImageLabel");
-			v30 = Instance.new("ImageLabel");
-			v31 = Instance.new("UICorner");
-			v26 = 1 + 0;
-		end
-		if (v26 == 19) then
-			v47.Position = UDim2.new(0.887429655, 0 + 0, 0 - 0, 0);
-			v47.Size = UDim2.new(1202 - (373 + 829), 761 - (476 + 255), 1130 - (369 + 761), 18 + 12);
-			v47.Font = Enum.Font.SourceSansBold;
-			v47.Text = "-";
-			v47.TextColor3 = Color3.fromRGB(255, 463 - 208, 255);
-			v47.TextSize = 32;
-			v47.TextStrokeTransparency = 0 - 0;
-			v48.Name = "MouseHoverPart";
-			v48.Parent = v29;
-			v26 = 258 - (64 + 174);
-		end
-		if (v26 == 16) then
-			v45.BorderColor3 = Color3.fromRGB(0 + 0, 0 - 0, 336 - (144 + 192));
-			v45.BorderSizePixel = 0;
-			v45.Position = UDim2.new(216.5 - (42 + 174), 0, 0.5 + 0, 0 + 0);
-			v45.Size = UDim2.new(1 + 0, 1504 - (363 + 1141), 1581 - (1183 + 397), 0);
-			v45.Font = Enum.Font.SourceSansBold;
-			v45.Text = "About";
-			v45.TextColor3 = Color3.fromRGB(255, 776 - 521, 187 + 68);
-			v45.TextSize = 18;
-			v46.Name = "ExitBTN";
-			v26 = 17;
-		end
-		if (v26 == (3 + 0)) then
-			v27.Name = v25.Name;
-			v27.Parent = game.CoreGui;
-			v27.ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
-			v27.IgnoreGuiInset = true;
-			v28.Parent = v27;
-			v29.Name = "DropShadow";
-			v29.Parent = v27;
-			v29.AnchorPoint = Vector2.new(1975.5 - (1913 + 62), 0.5 + 0);
-			v29.BackgroundColor3 = Color3.fromRGB(675 - 420, 2188 - (565 + 1368), 958 - 703);
-			v26 = 1665 - (1477 + 184);
-		end
-		if (v26 == (10 - 2)) then
-			v33.Size = UDim2.new(0, 348 + 25, 856 - (564 + 292), 446 - 187);
-			v34.CornerRadius = UDim.new(0, 35 - 23);
-			v34.Parent = v33;
-			v35.Name = "About";
-			v35.Parent = v33;
-			v35.Active = true;
-			v35.AnchorPoint = Vector2.new(304.5 - (244 + 60), 0.5);
-			v35.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
-			v35.BackgroundTransparency = 1 + 0;
-			v26 = 485 - (41 + 435);
-		end
-		if (v26 == (1011 - (938 + 63))) then
-			v36.CellPadding = UDim2.new(0, 4 + 1, 1125 - (936 + 189), 3);
-			v36.CellSize = UDim2.new(0, 119 + 241, 1613 - (1565 + 48), 32);
-			v37.Name = "Catagory";
-			v37.Parent = v30;
-			v37.AnchorPoint = Vector2.new(0.5 + 0, 1138.5 - (782 + 356));
-			v37.BackgroundColor3 = Color3.fromRGB(267 - (176 + 91), 0 - 0, 0);
-			v37.BackgroundTransparency = 0.8;
-			v37.BorderColor3 = Color3.fromRGB(0, 0 - 0, 0);
-			v37.BorderSizePixel = 1092 - (975 + 117);
-			v26 = 11;
-		end
-		if (v26 == (1895 - (157 + 1718))) then
-			v48.BackgroundColor3 = Color3.fromRGB(207 + 48, 255, 255);
-			v48.BackgroundTransparency = 1;
-			v48.BorderColor3 = Color3.fromRGB(0 - 0, 0, 0);
-			v48.BorderSizePixel = 0 - 0;
-			v48.Position = UDim2.new(0.17936714, 0, 1018.194444448 - (697 + 321), 0 - 0);
-			v48.Size = UDim2.new(0 - 0, 1090 - 617, 0, 32);
-			v49.CornerRadius = UDim.new(0, 5 + 7);
-			v49.Parent = v29;
-			v50 = nil;
-			v26 = 39 - 18;
-		end
-		if (v26 == (45 - 28)) then
-			v46.Parent = v30;
-			v46.BackgroundColor3 = Color3.fromRGB(1482 - (322 + 905), 866 - (602 + 9), 1444 - (449 + 740));
-			v46.BackgroundTransparency = 873 - (826 + 46);
-			v46.BorderColor3 = Color3.fromRGB(947 - (245 + 702), 0, 0);
-			v46.BorderSizePixel = 0;
-			v46.Position = UDim2.new(0.943714797 - 0, 0 + 0, 1898 - (260 + 1638), 0);
-			v46.Size = UDim2.new(0, 30, 440 - (382 + 58), 30);
-			v46.Font = Enum.Font.SourceSansBold;
-			v46.Text = "X";
-			v26 = 18;
-		end
-		if (v26 == (41 - 28)) then
-			v40.SortOrder = Enum.SortOrder.LayoutOrder;
-			v40.CellPadding = UDim2.new(0, 5, 0 + 0, 3 - 1);
-			v40.CellSize = UDim2.new(0 - 0, 1330 - (902 + 303), 0 - 0, 30);
-			v41.Name = "About";
-			v41.Parent = v39;
-			v41.BackgroundColor3 = Color3.fromRGB(0 - 0, 0 + 0, 0);
-			v41.BackgroundTransparency = 1691 - (1121 + 569);
-			v41.BorderColor3 = Color3.fromRGB(214 - (22 + 192), 683 - (483 + 200), 1463 - (1404 + 59));
-			v41.BorderSizePixel = 0;
-			v26 = 38 - 24;
-		end
-		if ((2 - 0) == v26) then
-			v41 = Instance.new("Frame");
-			v42 = Instance.new("UICorner");
-			v43 = Instance.new("Frame");
-			v44 = Instance.new("UICorner");
-			v45 = Instance.new("TextLabel");
-			v46 = Instance.new("TextButton");
-			v47 = Instance.new("TextButton");
-			v48 = Instance.new("Frame");
-			v49 = Instance.new("UICorner");
-			v26 = 768 - (468 + 297);
-		end
-		if (v26 == (573 - (334 + 228))) then
-			v37.Position = UDim2.new(0.144465297, 0 - 0, 0.548333347, 0 - 0);
-			v37.Size = UDim2.new(0 - 0, 39 + 98, 0, 259);
-			v38.CornerRadius = UDim.new(236 - (141 + 95), 12 + 0);
-			v38.Parent = v37;
-			v39.Name = "Buttons";
-			v39.Parent = v37;
-			v39.Active = true;
-			v39.AnchorPoint = Vector2.new(0.5 - 0, 0.5 - 0);
-			v39.BackgroundColor3 = Color3.fromRGB(60 + 195, 698 - 443, 255);
-			v26 = 9 + 3;
-		end
-		if (v26 == 7) then
-			v33.Name = "Content";
-			v33.Parent = v30;
-			v33.AnchorPoint = Vector2.new(0.5, 0.5);
-			v33.BackgroundColor3 = Color3.fromRGB(0 + 0, 0 - 0, 0 + 0);
-			v33.BackgroundTransparency = 0.8;
-			v33.BorderColor3 = Color3.fromRGB(163 - (92 + 71), 0 + 0, 0 - 0);
-			v33.BorderSizePixel = 765 - (574 + 191);
-			v33.ClipsDescendants = true;
-			v33.Position = UDim2.new(0.636022508 + 0, 0, 0.548333347 - 0, 0 + 0);
-			v26 = 857 - (254 + 595);
-		end
-		if ((130 - (55 + 71)) == v26) then
-			v29.BackgroundTransparency = 1 - 0;
-			v29.BorderColor3 = Color3.fromRGB(1790 - (573 + 1217), 0 - 0, 0 + 0);
-			v29.BorderSizePixel = 0;
-			v29.Position = UDim2.new(0.646796644 - 0, 939 - (714 + 225), 0.443877548 - 0, 0);
-			v29.Size = UDim2.new(0 - 0, 87 + 713, 0 - 0, 1256 - (118 + 688));
-			v29.Image = "rbxassetid://18572237756";
-			v30.Name = "MainFrame";
-			v30.Parent = v29;
-			v30.AnchorPoint = Vector2.new(48.5 - (25 + 23), 0.5 + 0);
-			v26 = 5;
-		end
-		if (v26 == (1891 - (927 + 959))) then
-			v30.BackgroundColor3 = v25.BackgroundColor;
-			v30.BorderColor3 = Color3.fromRGB(0, 0 - 0, 0);
-			v30.BorderSizePixel = 0;
-			v30.Position = UDim2.new(732 - (16 + 716), 785 - 378, 0, 332 - (11 + 86));
-			v30.Size = UDim2.new(0.66624999, 0 - 0, 285.666666687 - (175 + 110), 0);
-			v30.Image = "rbxassetid://" .. v25.Image;
-			v30.ImageTransparency = 0.2;
-			v31.CornerRadius = UDim.new(0 - 0, 59 - 47);
-			v31.Parent = v30;
-			v26 = 1802 - (503 + 1293);
-		end
-		if (v26 == (33 - 21)) then
-			v39.BackgroundTransparency = 1 + 0;
-			v39.BorderColor3 = Color3.fromRGB(0, 1061 - (810 + 251), 0);
-			v39.BorderSizePixel = 0 + 0;
-			v39.Position = UDim2.new(0.5 + 0, 0, 0.5 + 0, 533 - (43 + 490));
-			v39.Size = UDim2.new(1, 733 - (711 + 22), 0.970000029, 0);
-			v39.CanvasSize = UDim2.new(0, 0 - 0, 860 - (240 + 619), 0 + 0);
-			v39.ScrollBarThickness = 5 - 1;
-			v40.Parent = v39;
-			v40.HorizontalAlignment = Enum.HorizontalAlignment.Center;
-			v26 = 13;
-		end
-		if (v26 == 15) then
-			v43.BorderSizePixel = 0;
-			v43.Position = UDim2.new(0.5 + 0, 1744 - (1344 + 400), 0.5, 405 - (255 + 150));
-			v43.Size = UDim2.new(1, 0, 1, 0 + 0);
-			v44.CornerRadius = UDim.new(0 + 0, 42 - 32);
-			v44.Parent = v43;
-			v45.Parent = v43;
-			v45.AnchorPoint = Vector2.new(0.5, 0.5 - 0);
-			v45.BackgroundColor3 = Color3.fromRGB(1994 - (404 + 1335), 661 - (183 + 223), 255);
-			v45.BackgroundTransparency = 1;
-			v26 = 19 - 3;
-		end
-		if (v26 == (6 + 3)) then
-			v35.BorderColor3 = Color3.fromRGB(0 + 0, 337 - (10 + 327), 0 + 0);
-			v35.BorderSizePixel = 0;
-			v35.Position = UDim2.new(0.5, 338 - (118 + 220), 0.5, 0 + 0);
-			v35.Size = UDim2.new(1, 449 - (108 + 341), 0.970000029 + 0, 0 - 0);
-			v35.CanvasSize = UDim2.new(1493 - (711 + 782), 0 - 0, 470 - (270 + 199), 0 + 0);
-			v35.ScrollBarThickness = 1823 - (580 + 1239);
-			v36.Parent = v35;
-			v36.HorizontalAlignment = Enum.HorizontalAlignment.Center;
-			v36.SortOrder = Enum.SortOrder.LayoutOrder;
-			v26 = 29 - 19;
-		end
-		if (v26 == (6 + 0)) then
-			v32.Name = "Title";
-			v32.Parent = v30;
-			v32.BackgroundColor3 = Color3.fromRGB(0, 0, 0 + 0);
-			v32.BackgroundTransparency = 1 + 0;
-			v32.BorderColor3 = Color3.fromRGB(0, 0 - 0, 0);
-			v32.BorderSizePixel = 0;
-			v32.Position = UDim2.new(0.0157227945 + 0, 0, 1167.015557454 - (645 + 522), 1790 - (1010 + 780));
-			v32.Size = UDim2.new(0 + 0, 476 - 376, 0 - 0, 1864 - (1045 + 791));
-			v32.Image = "rbxassetid://18543912384";
-			v26 = 7;
-		end
-		if ((53 - 32) == v26) then
-			function v50()
-				local v718 = Instance.new("LocalScript", v27);
-				wait(0.1);
-				local v719 = v718.Parent.DropShadow.MainFrame.Content;
-				local v720 = v718.Parent.DropShadow.MainFrame.Catagory;
-				local v721 = game:GetService("RunService");
-				local v722 = true;
-				local v723 = false;
-				local v724 = false;
-				local v725 = UDim2.new();
-				v718.Parent.DropShadow.MainFrame.MinBTN.MouseButton1Up:Connect(function()
-					local v733 = 0 - 0;
-					while true do
-						if ((505 - (351 + 154)) == v733) then
-							v725 = v718.Parent.DropShadow.Position;
-							v3:Create(v718.Parent.DropShadow, TweenInfo.new(1574.75 - (1281 + 293), Enum.EasingStyle.Quint, Enum.EasingDirection.In, 0, false, 266 - (28 + 238)), {Position=(v725 + UDim2.new(0 - 0, 0, 1561 - (1381 + 178), 0 + 0))}):Play();
-							break;
-						end
-					end
-				end);
-				v718.Parent.DropShadow.MainFrame.ExitBTN.MouseButton1Up:Connect(function()
-					for v749, v750 in pairs(v718.Parent:GetDescendants()) do
-						if v750:IsA("GuiObject") then
-							local v758 = 0 + 0;
-							while true do
-								if (v758 == (0 + 0)) then
-									if (v750:IsA("Frame") or v750:IsA("TextButton") or v750:IsA("TextBox")) then
-										v3:Create(v750, TweenInfo.new(0.2 - 0, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0, false, 0 + 0), {BackgroundTransparency=1}):Play();
-									end
-									if (v750:IsA("ImageLabel") or v750:IsA("ImageButton")) then
-										v3:Create(v750, TweenInfo.new(470.2 - (381 + 89), Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0 + 0, false, 0 + 0), {ImageTransparency=1,BackgroundTransparency=1}):Play();
-									end
-									v758 = 1 - 0;
-								end
-								if (v758 == (1157 - (1074 + 82))) then
-									if (v750:IsA("TextLabel") or v750:IsA("TextButton") or v750:IsA("TextBox")) then
-										v3:Create(v750, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0 - 0, false, 1784 - (214 + 1570)), {TextTransparency=(1456 - (990 + 465)),TextStrokeTransparency=(1 + 0)}):Play();
-									end
-									if v750:IsA("UIStroke") then
-										v3:Create(v750, TweenInfo.new(0.2 + 0, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0, false, 0 + 0), {Transparency=1}):Play();
-									end
-									break;
-								end
-							end
-						end
-					end
-					wait(0.6 - 0);
-					v718.Parent:Destroy();
-				end);
-				local v726 = function(v734, v735)
-					if ((v735.Position == UDim2.new(1726.5 - (1668 + 58), 626 - (512 + 114), 0.5 - 0, 0 - 0)) and (v735.Name ~= v734.Name)) then
-						v3:Create(v735, TweenInfo.new(0.6 - 0, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0 + 0, false, 0), {Position=UDim2.new(-(0.5 + 0), 0 + 0, 0.5 - 0, 1994 - (109 + 1885))}):Play();
-					end
-					if (v735.Name == v734.Name) then
-						local v752 = 1469 - (1269 + 200);
-						while true do
-							if (v752 == (0 - 0)) then
-								v735.Position = UDim2.new(1.5, 815 - (98 + 717), 826.5 - (802 + 24), 0 - 0);
-								v3:Create(v735, TweenInfo.new(0.6, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0 - 0, false, 0), {Position=UDim2.new(0.5 + 0, 0 + 0, 0.5 + 0, 0 + 0)}):Play();
-								break;
-							end
-						end
-					end
-				end;
-				local function v727(v736)
-					v736.CanvasSize = UDim2.new(0 - 0, 0, 0 - 0, v736.UIGridLayout.AbsoluteContentSize.Y);
+	end)
+end
+
+GUI.CreateUI = function(UISettings)
+	UISettings = UISettings or {}
+	UISettings.Image = UISettings.Image or "18544048114"
+	UISettings.Name = UISettings.Name or "Your Hub Name"
+	UISettings.BackgroundColor = UISettings.BackgroundColor or Color3.fromRGB(93, 0, 186)
+
+	-- Instances:
+
+	local LostHUB = Instance.new("ScreenGui")
+	local UIScale = Instance.new("UIScale")
+	local DropShadow = Instance.new("ImageLabel")
+	local MainFrame = Instance.new("ImageLabel")
+	local UICorner = Instance.new("UICorner")
+	local Title = Instance.new("ImageLabel")
+	local Content = Instance.new("Frame")
+	local UICorner_2 = Instance.new("UICorner")
+	local About = Instance.new("ScrollingFrame")
+	local UIGridLayout = Instance.new("UIGridLayout")
+	local Catagory = Instance.new("Frame")
+	local UICorner_3 = Instance.new("UICorner")
+	local Buttons = Instance.new("ScrollingFrame")
+	local UIGridLayout_2 = Instance.new("UIGridLayout")
+	local About_2 = Instance.new("Frame")
+	local UICorner_4 = Instance.new("UICorner")
+	local Content_2 = Instance.new("Frame")
+	local UICorner_5 = Instance.new("UICorner")
+	local TextLabel = Instance.new("TextLabel")
+	local ExitBTN = Instance.new("TextButton")
+	local MinBTN = Instance.new("TextButton")
+	local MouseHoverPart = Instance.new("Frame")
+	local UICorner_6 = Instance.new("UICorner")
+
+	--Properties:
+
+	LostHUB.Name = UISettings.Name
+	LostHUB.Parent = game.CoreGui
+	LostHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	LostHUB.IgnoreGuiInset = true
+
+	UIScale.Parent = LostHUB
+
+	DropShadow.Name = "DropShadow"
+	DropShadow.Parent = LostHUB
+	DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+	DropShadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	DropShadow.BackgroundTransparency = 1.000
+	DropShadow.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	DropShadow.BorderSizePixel = 0
+	DropShadow.Position = UDim2.new(0.646796644, 0, 0.443877548, 0)
+	DropShadow.Size = UDim2.new(0, 800, 0, 450)
+	DropShadow.Image = "rbxassetid://18572237756"
+
+	MainFrame.Name = "MainFrame"
+	MainFrame.Parent = DropShadow
+	MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+	MainFrame.BackgroundColor3 = UISettings.BackgroundColor
+	MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	MainFrame.BorderSizePixel = 0
+	MainFrame.Position = UDim2.new(0, 407, 0, 235)
+	MainFrame.Size = UDim2.new(0.66624999, 0, 0.666666687, 0)
+	MainFrame.Image = "rbxassetid://" .. UISettings.Image
+	MainFrame.ImageTransparency = 0.200
+
+	UICorner.CornerRadius = UDim.new(0, 12)
+	UICorner.Parent = MainFrame
+
+	Title.Name = "Title"
+	Title.Parent = MainFrame
+	Title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Title.BackgroundTransparency = 1.000
+	Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Title.BorderSizePixel = 0
+	Title.Position = UDim2.new(0.0157227945, 0, 0.015557454, 0)
+	Title.Size = UDim2.new(0, 100, 0, 28)
+	Title.Image = "rbxassetid://18543912384"
+
+	Content.Name = "Content"
+	Content.Parent = MainFrame
+	Content.AnchorPoint = Vector2.new(0.5, 0.5)
+	Content.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Content.BackgroundTransparency = 0.800
+	Content.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Content.BorderSizePixel = 0
+	Content.ClipsDescendants = true
+	Content.Position = UDim2.new(0.636022508, 0, 0.548333347, 0)
+	Content.Size = UDim2.new(0, 373, 0, 259)
+
+	UICorner_2.CornerRadius = UDim.new(0, 12)
+	UICorner_2.Parent = Content
+
+	About.Name = "About"
+	About.Parent = Content
+	About.Active = true
+	About.AnchorPoint = Vector2.new(0.5, 0.5)
+	About.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	About.BackgroundTransparency = 1.000
+	About.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	About.BorderSizePixel = 0
+	About.Position = UDim2.new(0.5, 0, 0.5, 0)
+	About.Size = UDim2.new(1, 0, 0.970000029, 0)
+	About.CanvasSize = UDim2.new(0, 0, 1, 0)
+	About.ScrollBarThickness = 4
+
+	UIGridLayout.Parent = About
+	UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+	UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	UIGridLayout.CellPadding = UDim2.new(0, 5, 0, 3)
+	UIGridLayout.CellSize = UDim2.new(0, 360, 0, 32)
+
+	Catagory.Name = "Catagory"
+	Catagory.Parent = MainFrame
+	Catagory.AnchorPoint = Vector2.new(0.5, 0.5)
+	Catagory.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Catagory.BackgroundTransparency = 0.800
+	Catagory.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Catagory.BorderSizePixel = 0
+	Catagory.Position = UDim2.new(0.144465297, 0, 0.548333347, 0)
+	Catagory.Size = UDim2.new(0, 137, 0, 259)
+
+	UICorner_3.CornerRadius = UDim.new(0, 12)
+	UICorner_3.Parent = Catagory
+
+	Buttons.Name = "Buttons"
+	Buttons.Parent = Catagory
+	Buttons.Active = true
+	Buttons.AnchorPoint = Vector2.new(0.5, 0.5)
+	Buttons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Buttons.BackgroundTransparency = 1.000
+	Buttons.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Buttons.BorderSizePixel = 0
+	Buttons.Position = UDim2.new(0.5, 0, 0.5, 0)
+	Buttons.Size = UDim2.new(1, 0, 0.970000029, 0)
+	Buttons.CanvasSize = UDim2.new(0, 0, 1, 0)
+	Buttons.ScrollBarThickness = 4
+
+	UIGridLayout_2.Parent = Buttons
+	UIGridLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+	UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+	UIGridLayout_2.CellPadding = UDim2.new(0, 5, 0, 2)
+	UIGridLayout_2.CellSize = UDim2.new(0, 125, 0, 30)
+
+	About_2.Name = "About"
+	About_2.Parent = Buttons
+	About_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	About_2.BackgroundTransparency = 1.000
+	About_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	About_2.BorderSizePixel = 0
+	About_2.Size = UDim2.new(0, 100, 0, 100)
+
+	UICorner_4.CornerRadius = UDim.new(0, 10)
+	UICorner_4.Parent = About_2
+
+	Content_2.Name = "Content"
+	Content_2.Parent = About_2
+	Content_2.AnchorPoint = Vector2.new(0.5, 0.5)
+	Content_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Content_2.BackgroundTransparency = 0.800
+	Content_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Content_2.BorderSizePixel = 0
+	Content_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+	Content_2.Size = UDim2.new(1, 0, 1, 0)
+
+	UICorner_5.CornerRadius = UDim.new(0, 10)
+	UICorner_5.Parent = Content_2
+
+	TextLabel.Parent = Content_2
+	TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel.BorderSizePixel = 0
+	TextLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+	TextLabel.Size = UDim2.new(1, 0, 1, 0)
+	TextLabel.Font = Enum.Font.SourceSansBold
+	TextLabel.Text = "About"
+	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.TextSize = 18.000
+
+	ExitBTN.Name = "ExitBTN"
+	ExitBTN.Parent = MainFrame
+	ExitBTN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ExitBTN.BackgroundTransparency = 1.000
+	ExitBTN.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	ExitBTN.BorderSizePixel = 0
+	ExitBTN.Position = UDim2.new(0.943714797, 0, 0, 0)
+	ExitBTN.Size = UDim2.new(0, 30, 0, 30)
+	ExitBTN.Font = Enum.Font.SourceSansBold
+	ExitBTN.Text = "X"
+	ExitBTN.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ExitBTN.TextSize = 32.000
+	ExitBTN.TextStrokeTransparency = 0.000
+
+	MinBTN.Name = "MinBTN"
+	MinBTN.Parent = MainFrame
+	MinBTN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	MinBTN.BackgroundTransparency = 1.000
+	MinBTN.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	MinBTN.BorderSizePixel = 0
+	MinBTN.Position = UDim2.new(0.887429655, 0, 0, 0)
+	MinBTN.Size = UDim2.new(0, 30, 0, 30)
+	MinBTN.Font = Enum.Font.SourceSansBold
+	MinBTN.Text = "-"
+	MinBTN.TextColor3 = Color3.fromRGB(255, 255, 255)
+	MinBTN.TextSize = 32.000
+	MinBTN.TextStrokeTransparency = 0.000
+
+	MouseHoverPart.Name = "MouseHoverPart"
+	MouseHoverPart.Parent = DropShadow
+	MouseHoverPart.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	MouseHoverPart.BackgroundTransparency = 1.000
+	MouseHoverPart.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	MouseHoverPart.BorderSizePixel = 0
+	MouseHoverPart.Position = UDim2.new(0.17936714, 0, 0.194444448, 0)
+	MouseHoverPart.Size = UDim2.new(0, 473, 0, 32)
+
+	UICorner_6.CornerRadius = UDim.new(0, 12)
+	UICorner_6.Parent = DropShadow
+
+	-- Scripts:
+
+	local function LUPORG_fake_script() -- LostHUB.Manager 
+		local script = Instance.new('LocalScript', LostHUB)
+
+		wait(0.1)
+
+		local ContentFolder = script.Parent.DropShadow.MainFrame.Content
+		local CatagoryFolder = script.Parent.DropShadow.MainFrame.Catagory
+		
+		local RS = game:GetService("RunService")
+
+		local AllowedToSwitchFrames = true
+		local Clicking = false
+		local HoveringFrame = false
+		local SavedFramePosition = UDim2.new()
+
+		script.Parent.DropShadow.MainFrame.MinBTN.MouseButton1Up:Connect(function()
+			SavedFramePosition = script.Parent.DropShadow.Position
+			TweenService:Create(script.Parent.DropShadow, TweenInfo.new(0.75, Enum.EasingStyle.Quint, Enum.EasingDirection.In, 0, false, 0), {Position = SavedFramePosition + UDim2.new(0, 0, 2, 0)}):Play()
+		end)
+
+		script.Parent.DropShadow.MainFrame.ExitBTN.MouseButton1Up:Connect(function()
+			for i, v in pairs(script.Parent:GetDescendants()) do
+				if v:IsA('Frame') or v:IsA('TextButton') or v:IsA('TextBox') then
+					TweenService:Create(v, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0, false, 0), {BackgroundTransparency = 1}):Play()
 				end
-				for v738, v739 in pairs(v719:GetChildren()) do
-					if v739:IsA("ScrollingFrame") then
-						v727(v739);
-					end
+				if v:IsA('ImageLabel') or v:IsA('ImageButton') then
+					TweenService:Create(v, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0, false, 0), {ImageTransparency = 1, BackgroundTransparency = 1}):Play()
 				end
-				for v740, v741 in pairs(v720:GetChildren()) do
-					if v741:IsA("ScrollingFrame") then
-						v727(v741);
-					end
+				if v:IsA('TextLabel') or v:IsA('TextButton') or v:IsA('TextBox') then
+					TweenService:Create(v, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0, false, 0), {TextTransparency = 1, TextStrokeTransparency = 1}):Play()
 				end
-				v718.Parent.DropShadow.MouseHoverPart.MouseEnter:Connect(function()
-					v724 = true;
-				end);
-				v718.Parent.DropShadow.MouseHoverPart.MouseLeave:Connect(function()
-					v724 = false;
-				end);
-				v4.InputBegan:Connect(function(v742)
-					if ((v742.UserInputType == Enum.UserInputType.MouseButton1) and v724) then
-						v723 = true;
-						local v753 = v4:GetMouseLocation();
-					end
-				end);
-				v4.InputEnded:Connect(function(v743)
-					if (v743.UserInputType == Enum.UserInputType.MouseButton1) then
-						v723 = false;
-					end
-					if (v743.KeyCode == Enum.KeyCode.RightShift) then
-						v3:Create(v718.Parent.DropShadow, TweenInfo.new(1 + 0, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0 + 0, false, 0 + 0), {Position=v725}):Play();
-					end
-				end);
-				for v744, v745 in pairs(v720.Buttons:GetChildren()) do
-					if v745:IsA("Frame") then
-						local v754 = false;
-						v745.Content.MouseEnter:Connect(function()
-							v754 = true;
-							v3:Create(v745.Content, TweenInfo.new(0.3 + 0, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Rotation=math.random(-17, 17),Size=UDim2.new(1.05, 0 + 0, 1.05, 1433 - (797 + 636)),BackgroundColor3=Color3.fromRGB(1238 - 983, 255, 1874 - (1427 + 192))}):Play();
-						end);
-						v745.Content.MouseLeave:Connect(function()
-							local v759 = 0 + 0;
-							while true do
-								if (v759 == (0 - 0)) then
-									v754 = false;
-									v3:Create(v745.Content, TweenInfo.new(0.25 + 0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0 + 0), {Rotation=(326 - (192 + 134)),Size=UDim2.new(1277 - (316 + 960), 0, 1, 0 + 0),BackgroundColor3=Color3.fromRGB(0 + 0, 0, 0 + 0),BackgroundTransparency=(0.8 - 0)}):Play();
-									break;
-								end
-							end
-						end);
-						v4.InputBegan:Connect(function(v760)
-							if ((v760.UserInputType == Enum.UserInputType.MouseButton1) and v754) then
-								v3:Create(v745.Content, TweenInfo.new(551.3 - (83 + 468), Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 1806 - (1202 + 604), false, 0 - 0), {Size=UDim2.new(0.95 - 0, 0, 0.95, 0 - 0),BackgroundTransparency=0.6}):Play();
-								if v722 then
-									v722 = false;
-									for v764, v765 in pairs(v719:GetChildren()) do
-										if (v719:FindFirstChild(v745.Name).Position ~= UDim2.new(325.5 - (45 + 280), 0, 0.5, 0 + 0)) then
-											local v766 = 0;
-											while true do
-												if (v766 == 0) then
-													if v765:IsA("ScrollingFrame") then
-														if ((v765.Position == UDim2.new(0.5 + 0, 0 + 0, 0.5 + 0, 0 + 0)) and (v765.Name ~= v745.Name)) then
-															v3:Create(v765, TweenInfo.new(0.6, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0 - 0, false, 1911 - (340 + 1571)), {Position=UDim2.new(-0.5, 0 + 0, 0.5, 1772 - (1733 + 39))}):Play();
-														end
-													end
-													if (v765.Name == v745.Name) then
-														local v767 = 0;
-														while true do
-															if ((0 - 0) == v767) then
-																v765.Position = UDim2.new(1.5, 0, 1034.5 - (125 + 909), 1948 - (1096 + 852));
-																v3:Create(v765, TweenInfo.new(0.6 + 0, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0 - 0, false, 0 + 0), {Position=UDim2.new(512.5 - (409 + 103), 236 - (46 + 190), 95.5 - (51 + 44), 0)}):Play();
-																break;
-															end
-														end
-													end
-													break;
-												end
-											end
+				if v:IsA("UIStroke") then
+					TweenService:Create(v, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.In, 0, false, 0), {Transparency = 1}):Play()
+				end
+			end
+			wait(0.6)
+			script.Parent:Destroy()
+		end)
+
+		local SwitchFrames = function(Button, v)
+			if v.Position == UDim2.new(0.5, 0, 0.5, 0) and v.Name ~= Button.Name then
+				TweenService:Create(v, TweenInfo.new(0.6, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0, false, 0), {Position = UDim2.new(-0.5, 0, 0.5, 0)}):Play()
+			end
+
+			if v.Name == Button.Name then
+				v.Position = UDim2.new(1.5, 0, 0.5, 0)
+				TweenService:Create(v, TweenInfo.new(0.6, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0, false, 0), {Position = UDim2.new(0.5, 0, 0.5, 0)}):Play()
+			end
+		end
+
+		local function UpdateCanvasSize(Canvas)
+			Canvas.CanvasSize = UDim2.new(0, 0, 0, Canvas.UIGridLayout.AbsoluteContentSize.Y)
+		end
+
+		for i, v in pairs(ContentFolder:GetChildren()) do
+			if v:IsA("ScrollingFrame") then
+				UpdateCanvasSize(v)
+			end
+		end
+
+		for i, v in pairs(CatagoryFolder:GetChildren()) do
+			if v:IsA("ScrollingFrame") then
+				UpdateCanvasSize(v)
+			end
+		end
+
+		script.Parent.DropShadow.MouseHoverPart.MouseEnter:Connect(function()
+			HoveringFrame = true
+		end)
+
+		script.Parent.DropShadow.MouseHoverPart.MouseLeave:Connect(function()
+			HoveringFrame = false
+		end)
+
+		UIS.InputBegan:Connect(function(Key)
+			if Key.UserInputType == Enum.UserInputType.MouseButton1 and HoveringFrame then
+				Clicking = true
+				local MousePos = UIS:GetMouseLocation()
+			end
+		end)
+
+		UIS.InputEnded:Connect(function(Key)
+			if Key.UserInputType == Enum.UserInputType.MouseButton1 then
+				Clicking = false
+			end
+
+			if Key.KeyCode == Enum.KeyCode.RightShift then
+				TweenService:Create(script.Parent.DropShadow, TweenInfo.new(1, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Position = SavedFramePosition}):Play()
+			end
+		end)
+
+		for i, Button in pairs(CatagoryFolder.Buttons:GetChildren()) do
+			if Button:IsA("Frame") then
+				local MouseHover = false
+
+				Button.Content.MouseEnter:Connect(function()
+					MouseHover = true
+					TweenService:Create(Button.Content, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Rotation = math.random(-17, 17), Size = UDim2.new(1.05, 0, 1.05, 0), BackgroundColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+				end)
+
+				Button.Content.MouseLeave:Connect(function()
+					MouseHover = false
+					TweenService:Create(Button.Content, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {Rotation = 0, Size = UDim2.new(1, 0, 1, 0), BackgroundColor3 = Color3.fromRGB(0, 0, 0), BackgroundTransparency = 0.8}):Play()
+				end)
+
+				UIS.InputBegan:Connect(function(Key)
+					if Key.UserInputType == Enum.UserInputType.MouseButton1 and MouseHover then
+						TweenService:Create(Button.Content, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Size = UDim2.new(0.95, 0, 0.95, 0), BackgroundTransparency = 0.6}):Play()
+						if AllowedToSwitchFrames then
+							AllowedToSwitchFrames = false
+							for i, v in pairs(ContentFolder:GetChildren()) do
+								if ContentFolder:FindFirstChild(Button.Name).Position ~= UDim2.new(0.5, 0, 0.5, 0) then
+									if v:IsA("ScrollingFrame") then
+										if v.Position == UDim2.new(0.5, 0, 0.5, 0) and v.Name ~= Button.Name then
+											coroutine.wrap(function()
+												TweenService:Create(v, TweenInfo.new(0.6, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0, false, 0), {Position = UDim2.new(-0.5, 0, 0.5, 0)}):Play()
+												wait(0.6)
+												v.Visible = false
+											end)()
+										end
+										
+										if v.Name == Button.Name then
+											v.Visible = true
+											v.Position = UDim2.new(1.5, 0, 0.5, 0)
+											TweenService:Create(v, TweenInfo.new(0.6, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0, false, 0), {Position = UDim2.new(0.5, 0, 0.5, 0)}):Play()
 										end
 									end
-									wait(0.6 + 0);
-									v722 = true;
 								end
+
 							end
-						end);
-						v4.InputEnded:Connect(function(v761)
-							if ((v761.UserInputType == Enum.UserInputType.MouseButton1) and v754) then
-								v3:Create(v745.Content, TweenInfo.new(1317.25 - (1114 + 203), Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 726 - (228 + 498), false, 0 + 0), {Size=UDim2.new(1, 0 + 0, 664 - (174 + 489), 0 - 0),BackgroundTransparency=(1905.8 - (830 + 1075))}):Play();
-							end
-						end);
-					end
-				end
-				local v728 = UDim2.new();
-				v721.RenderStepped:Connect(function(v746)
-					v746 = v746 * (584 - (303 + 221));
-					local v747 = 0.2;
-					if (v723 and (v718.Parent.DropShadow.Position ~= UDim2.new())) then
-						local v755 = 1269 - (231 + 1038);
-						local v756;
-						while true do
-							if (v755 == 0) then
-								v756 = UDim2.new(0 + 0, v4:GetMouseLocation().X, 1162 - (171 + 991), v4:GetMouseLocation().Y + (515 - 390));
-								if (v728 ~= v756) then
-									v3:Create(v718.Parent.DropShadow, TweenInfo.new(v747, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0 - 0, false, 0), {Position=v756}):Play();
-									v728 = v756;
-								end
-								break;
-							end
+							wait(0.6)
+							AllowedToSwitchFrames = true
 						end
 					end
-				end);
-			end
-			coroutine.wrap(v50)();
-			v47.MouseButton1Up:Connect(function()
-				v0.NotifyLocalPlayer({Text="To re-open your UI press Left Shift."});
-			end);
-			v1 = v30;
-			v0.NotifyLocalPlayer({Text="UI successfully loaded."});
-			break;
-		end
-	end
-end;
-v0.CreateCatagory = function(v51)
-	v51 = v51 or {};
-	v51.Name = v51.Name or "Catagory Name";
-	local v53 = Instance.new("Frame");
-	local v54 = Instance.new("UICorner");
-	local v55 = Instance.new("Frame");
-	local v56 = Instance.new("UICorner");
-	local v57 = Instance.new("TextLabel");
-	v53.Name = v51.Name;
-	v53.Parent = v1.Catagory.Buttons;
-	v53.BackgroundColor3 = Color3.fromRGB(0, 0 - 0, 0);
-	v53.BackgroundTransparency = 1 + 0;
-	v53.BorderColor3 = Color3.fromRGB(0, 0 - 0, 0);
-	v53.BorderSizePixel = 0 - 0;
-	v53.Size = UDim2.new(0 - 0, 309 - 209, 0, 1348 - (111 + 1137));
-	v54.CornerRadius = UDim.new(158 - (91 + 67), 10);
-	v54.Parent = v53;
-	v55.Name = "Content";
-	v55.Parent = v53;
-	v55.AnchorPoint = Vector2.new(0.5 - 0, 0.5);
-	v55.BackgroundColor3 = Color3.fromRGB(0 + 0, 0, 523 - (423 + 100));
-	v55.BackgroundTransparency = 0.8 + 0;
-	v55.BorderColor3 = Color3.fromRGB(0 - 0, 0 + 0, 0);
-	v55.BorderSizePixel = 771 - (326 + 445);
-	v55.Position = UDim2.new(0.5 - 0, 0 - 0, 0.5 - 0, 711 - (530 + 181));
-	v55.Size = UDim2.new(882 - (614 + 267), 32 - (19 + 13), 1 - 0, 0 - 0);
-	v56.CornerRadius = UDim.new(0, 10);
-	v56.Parent = v55;
-	v57.Parent = v55;
-	v57.AnchorPoint = Vector2.new(0.5 - 0, 0.5 + 0);
-	v57.BackgroundColor3 = Color3.fromRGB(448 - 193, 255, 528 - 273);
-	v57.BackgroundTransparency = 1;
-	v57.BorderColor3 = Color3.fromRGB(1812 - (1293 + 519), 0 - 0, 0 - 0);
-	v57.BorderSizePixel = 0 - 0;
-	v57.Position = UDim2.new(0.5, 0 - 0, 0.5 - 0, 0);
-	v57.Size = UDim2.new(1 + 0, 0 + 0, 1, 0);
-	v57.Font = Enum.Font.SourceSansBold;
-	v57.Text = v51.Name;
-	v57.TextColor3 = Color3.fromRGB(592 - 337, 59 + 196, 85 + 170);
-	v57.TextSize = 18;
-	local v55 = Instance.new("ScrollingFrame");
-	local v92 = Instance.new("UIGridLayout");
-	v55.Name = v51.Name;
-	v55.Parent = v1.Content;
-	v55.Active = true;
-	v55.AnchorPoint = Vector2.new(0.5, 0.5 + 0);
-	v55.BackgroundColor3 = Color3.fromRGB(1351 - (709 + 387), 2113 - (673 + 1185), 739 - 484);
-	v55.BackgroundTransparency = 3 - 2;
-	v55.BorderColor3 = Color3.fromRGB(0, 0, 0 - 0);
-	v55.BorderSizePixel = 0 + 0;
-	v55.Position = UDim2.new(1.5 + 0, 0 - 0, 0.5 + 0, 0);
-	v55.Size = UDim2.new(1 - 0, 0, 0.970000029 - 0, 0);
-	v55.CanvasSize = UDim2.new(1880 - (446 + 1434), 1283 - (1040 + 243), 1, 0);
-	v55.ScrollBarThickness = 11 - 7;
-	v92.Parent = v55;
-	v92.HorizontalAlignment = Enum.HorizontalAlignment.Center;
-	v92.SortOrder = Enum.SortOrder.LayoutOrder;
-	v92.CellPadding = UDim2.new(1847 - (559 + 1288), 5, 1931 - (609 + 1322), 3);
-	v92.CellSize = UDim2.new(454 - (13 + 441), 1345 - 985, 0 - 0, 32);
-	v2 = v55;
-end;
-v0.CreateLabel = function(v104)
-	local v105 = 0 - 0;
-	local v106;
-	local v107;
-	local v108;
-	local v109;
-	local v110;
-	while true do
-		if (v105 == (1 + 5)) then
-			v110.Font = Enum.Font.SourceSansBold;
-			v110.TextColor3 = Color3.fromRGB(255, 926 - 671, 91 + 164);
-			v110.TextSize = 8 + 10;
-			v110.TextWrapped = true;
-			v110.TextXAlignment = Enum.TextXAlignment.Left;
-			v110.Text = v104.Text;
-			break;
-		end
-		if (v105 == (11 - 7)) then
-			v108.Position = UDim2.new(0.5 + 0, 0 - 0, 0.5 + 0, 0 + 0);
-			v108.Size = UDim2.new(1, 0 + 0, 1 + 0, 0 + 0);
-			v109.CornerRadius = UDim.new(0, 443 - (153 + 280));
-			v109.Parent = v108;
-			v110.Parent = v108;
-			v110.AnchorPoint = Vector2.new(0.5, 0.5 - 0);
-			v105 = 5 + 0;
-		end
-		if (v105 == (2 + 3)) then
-			v110.BackgroundColor3 = Color3.fromRGB(134 + 121, 255, 232 + 23);
-			v110.BackgroundTransparency = 1 + 0;
-			v110.BorderColor3 = Color3.fromRGB(0 - 0, 0 + 0, 667 - (89 + 578));
-			v110.BorderSizePixel = 0 + 0;
-			v110.Position = UDim2.new(0.511805594, 0, 0.5, 0 - 0);
-			v110.Size = UDim2.new(0.976388991, 0, 1050 - (572 + 477), 0);
-			v105 = 1 + 5;
-		end
-		if (v105 == 2) then
-			v106.BorderSizePixel = 0;
-			v106.Position = UDim2.new(0.325737268 + 0, 0 + 0, 6.073633e-8, 86 - (84 + 2));
-			v106.Size = UDim2.new(0 - 0, 280, 0 + 0, 902 - (497 + 345));
-			v107.CornerRadius = UDim.new(0, 1 + 9);
-			v107.Parent = v106;
-			v108.Name = "Content";
-			v105 = 3;
-		end
-		if (v105 == (1 + 2)) then
-			v108.Parent = v106;
-			v108.AnchorPoint = Vector2.new(1333.5 - (605 + 728), 0.5 + 0);
-			v108.BackgroundColor3 = Color3.fromRGB(0, 0, 0 - 0);
-			v108.BackgroundTransparency = 1;
-			v108.BorderColor3 = Color3.fromRGB(0 + 0, 0, 0);
-			v108.BorderSizePixel = 0 - 0;
-			v105 = 4 + 0;
-		end
-		if (v105 == (2 - 1)) then
-			v110 = Instance.new("TextLabel");
-			v106.Name = v104.Text;
-			v106.Parent = v2;
-			v106.BackgroundColor3 = Color3.fromRGB(0, 0, 0);
-			v106.BackgroundTransparency = 1 + 0;
-			v106.BorderColor3 = Color3.fromRGB(489 - (457 + 32), 0 + 0, 0);
-			v105 = 2;
-		end
-		if (v105 == 0) then
-			v104 = v104 or {};
-			v104.Text = v104.Text or "Text Label Text";
-			v106 = Instance.new("Frame");
-			v107 = Instance.new("UICorner");
-			v108 = Instance.new("Frame");
-			v109 = Instance.new("UICorner");
-			v105 = 1403 - (832 + 570);
-		end
-	end
-end;
-v0.AddLabelToAbout = function(v111)
-	local v112 = 0 + 0;
-	local v113;
-	local v114;
-	local v115;
-	local v116;
-	local v117;
-	while true do
-		if (v112 == 1) then
-			v115 = Instance.new("Frame");
-			v116 = Instance.new("UICorner");
-			v117 = Instance.new("TextLabel");
-			v113.Name = v111.Text;
-			v112 = 2;
-		end
-		if (v112 == 4) then
-			v114.Parent = v113;
-			v115.Name = "Content";
-			v115.Parent = v113;
-			v115.AnchorPoint = Vector2.new(0.5 + 0, 0.5 - 0);
-			v112 = 5;
-		end
-		if (v112 == 0) then
-			v111 = v111 or {};
-			v111.Text = v111.Text or "Text Label";
-			v113 = Instance.new("Frame");
-			v114 = Instance.new("UICorner");
-			v112 = 1 + 0;
-		end
-		if (v112 == 9) then
-			v117.Font = Enum.Font.SourceSansBold;
-			v117.TextColor3 = Color3.fromRGB(1051 - (588 + 208), 687 - 432, 255);
-			v117.TextSize = 1818 - (884 + 916);
-			v117.TextWrapped = true;
-			v112 = 20 - 10;
-		end
-		if (v112 == 8) then
-			v117.BorderColor3 = Color3.fromRGB(0 + 0, 0, 653 - (232 + 421));
-			v117.BorderSizePixel = 1889 - (1569 + 320);
-			v117.Position = UDim2.new(0.511805594 + 0, 0, 0.5, 0);
-			v117.Size = UDim2.new(0.976388991, 0, 1 + 0, 0 - 0);
-			v112 = 9;
-		end
-		if (v112 == 10) then
-			v117.TextXAlignment = Enum.TextXAlignment.Left;
-			v117.Text = v111.Text;
-			break;
-		end
-		if (v112 == 3) then
-			v113.BorderSizePixel = 605 - (316 + 289);
-			v113.Position = UDim2.new(0.325737268 - 0, 0 + 0, 6.073633e-8, 1453 - (666 + 787));
-			v113.Size = UDim2.new(425 - (360 + 65), 280, 0 + 0, 314 - (79 + 175));
-			v114.CornerRadius = UDim.new(0 - 0, 10);
-			v112 = 4 + 0;
-		end
-		if (v112 == (15 - 10)) then
-			v115.BackgroundColor3 = Color3.fromRGB(0 - 0, 0, 899 - (503 + 396));
-			v115.BackgroundTransparency = 1;
-			v115.BorderColor3 = Color3.fromRGB(181 - (92 + 89), 0, 0 - 0);
-			v115.BorderSizePixel = 0;
-			v112 = 4 + 2;
-		end
-		if (v112 == (4 + 2)) then
-			v115.Position = UDim2.new(0.5 - 0, 0 + 0, 0.5, 0 - 0);
-			v115.Size = UDim2.new(1 + 0, 0, 1 + 0, 0 - 0);
-			v116.CornerRadius = UDim.new(0, 2 + 8);
-			v116.Parent = v115;
-			v112 = 9 - 2;
-		end
-		if (v112 == (1246 - (485 + 759))) then
-			v113.Parent = v1.Content.About;
-			v113.BackgroundColor3 = Color3.fromRGB(0, 0 - 0, 0);
-			v113.BackgroundTransparency = 1190 - (442 + 747);
-			v113.BorderColor3 = Color3.fromRGB(1135 - (832 + 303), 946 - (88 + 858), 0 + 0);
-			v112 = 3;
-		end
-		if (v112 == 7) then
-			v117.Parent = v115;
-			v117.AnchorPoint = Vector2.new(0.5 + 0, 0.5);
-			v117.BackgroundColor3 = Color3.fromRGB(255, 11 + 244, 1044 - (766 + 23));
-			v117.BackgroundTransparency = 1;
-			v112 = 39 - 31;
-		end
-	end
-end;
-v0.CreateButton = function(v118)
-	v118 = v118 or {};
-	v118.Text = v118.Text or "Button Name Here";
-	v118.Function = v118.Function or function()
-	end;
-	local v121 = Instance.new("Frame");
-	local v122 = Instance.new("UICorner");
-	local v123 = Instance.new("Frame");
-	local v124 = Instance.new("UICorner");
-	local v125 = Instance.new("TextLabel");
-	local v126 = Instance.new("ImageLabel");
-	v121.Name = v118.Text;
-	v121.Parent = v2;
-	v121.BackgroundColor3 = Color3.fromRGB(0, 0 - 0, 0 - 0);
-	v121.BackgroundTransparency = 1;
-	v121.BorderColor3 = Color3.fromRGB(0 - 0, 1073 - (1036 + 37), 0 + 0);
-	v121.BorderSizePixel = 0 - 0;
-	v121.Position = UDim2.new(0.325737268, 0 + 0, 1480.0000000607363 - (641 + 839), 913 - (910 + 3));
-	v121.Size = UDim2.new(0, 713 - 433, 1684 - (1466 + 218), 60);
-	v122.CornerRadius = UDim.new(0, 5 + 5);
-	v122.Parent = v121;
-	v123.Name = "Content";
-	v123.Parent = v121;
-	v123.AnchorPoint = Vector2.new(1148.5 - (556 + 592), 0.5 + 0);
-	v123.BackgroundColor3 = Color3.fromRGB(808 - (329 + 479), 854 - (174 + 680), 0);
-	v123.BackgroundTransparency = 0.8;
-	v123.BorderColor3 = Color3.fromRGB(0 - 0, 0 - 0, 0 + 0);
-	v123.BorderSizePixel = 739 - (396 + 343);
-	v123.Position = UDim2.new(0.5, 0, 0.5 + 0, 0);
-	v123.Size = UDim2.new(1478 - (29 + 1448), 0, 1390 - (135 + 1254), 0 - 0);
-	v124.CornerRadius = UDim.new(0, 46 - 36);
-	v124.Parent = v123;
-	v125.Parent = v123;
-	v125.AnchorPoint = Vector2.new(0.5 + 0, 1527.5 - (389 + 1138));
-	v125.BackgroundColor3 = Color3.fromRGB(829 - (102 + 472), 241 + 14, 142 + 113);
-	v125.BackgroundTransparency = 1 + 0;
-	v125.BorderColor3 = Color3.fromRGB(0, 0, 0);
-	v125.BorderSizePixel = 1545 - (320 + 1225);
-	v125.Position = UDim2.new(0.511805594 - 0, 0, 0.5 + 0, 0);
-	v125.Size = UDim2.new(1464.976388991 - (157 + 1307), 1859 - (821 + 1038), 2 - 1, 0);
-	v125.Font = Enum.Font.SourceSansBold;
-	v125.TextColor3 = Color3.fromRGB(28 + 227, 452 - 197, 95 + 160);
-	v125.TextSize = 44 - 26;
-	v125.TextWrapped = true;
-	v125.TextXAlignment = Enum.TextXAlignment.Left;
-	v125.Text = v118.Text;
-	v126.Name = "Logo";
-	v126.Parent = v123;
-	v126.AnchorPoint = Vector2.new(0.5, 1026.5 - (834 + 192));
-	v126.BackgroundColor3 = Color3.fromRGB(17 + 238, 66 + 189, 255);
-	v126.BackgroundTransparency = 1 + 0;
-	v126.BorderColor3 = Color3.fromRGB(0 - 0, 0, 0);
-	v126.BorderSizePixel = 0;
-	v126.Position = UDim2.new(0.910820961, 0, 304.5 - (300 + 4), 0 + 0);
-	v126.Size = UDim2.new(0.0783584565, 0 - 0, 362.875 - (112 + 250), 0 + 0);
-	v126.Image = "rbxassetid://15689064619";
-	v126.ImageColor3 = Color3.fromRGB(0 - 0, 0 + 0, 0 + 0);
-	v126.ImageTransparency = 0.25 + 0;
-	local v176 = false;
-	v121.Content.MouseEnter:Connect(function()
-		local v297 = 0 + 0;
-		while true do
-			if (v297 == 0) then
-				v176 = true;
-				v3:Create(v121.Content, TweenInfo.new(0.25 + 0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 1414 - (1001 + 413)), {Rotation=math.random(-(6 - 3), 885 - (244 + 638)),Size=UDim2.new(694.05 - (627 + 66), 0, 1.05, 0 - 0),BackgroundColor3=Color3.fromRGB(857 - (512 + 90), 255, 2161 - (1665 + 241))}):Play();
-				break;
-			end
-		end
-	end);
-	v121.Content.MouseLeave:Connect(function()
-		local v298 = 717 - (373 + 344);
-		while true do
-			if (v298 == (0 + 0)) then
-				v176 = false;
-				v3:Create(v121.Content, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0 + 0, false, 0), {Rotation=(0 - 0),Size=UDim2.new(1 - 0, 1099 - (35 + 1064), 1 + 0, 0 - 0),BackgroundColor3=Color3.fromRGB(0 + 0, 0, 1236 - (298 + 938)),BackgroundTransparency=(1259.8 - (233 + 1026))}):Play();
-				break;
-			end
-		end
-	end);
-	v4.InputBegan:Connect(function(v299)
-		if ((v299.UserInputType == Enum.UserInputType.MouseButton1) and v176) then
-			v3:Create(v121.Content, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 1666 - (636 + 1030)), {Size=UDim2.new(0.95, 0 + 0, 0.95, 0),BackgroundTransparency=(0.6 + 0)}):Play();
-			v118.Function();
-		end
-	end);
-	v4.InputEnded:Connect(function(v300)
-		if ((v300.UserInputType == Enum.UserInputType.MouseButton1) and v176) then
-			v3:Create(v121.Content, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0, false, 0), {Size=UDim2.new(1 + 0, 0 + 0, 222 - (55 + 166), 0 + 0),BackgroundTransparency=(0.8 + 0)}):Play();
-		end
-	end);
-end;
-v0.CreateToggle = function(v177)
-	local v178 = 0;
-	local v179;
-	local v180;
-	local v181;
-	local v182;
-	local v183;
-	local v184;
-	local v185;
-	local v186;
-	local v187;
-	local v188;
-	local v189;
-	local v190;
-	local v191;
-	local v192;
-	while true do
-		if (v178 == (26 - 19)) then
-			v183.Position = UDim2.new(297.511805594 - (36 + 261), 0, 0.5 - 0, 1368 - (34 + 1334));
-			v183.Size = UDim2.new(0.976388991 + 0, 0 + 0, 1, 0);
-			v183.Font = Enum.Font.SourceSansBold;
-			v183.TextColor3 = Color3.fromRGB(255, 1538 - (1035 + 248), 276 - (20 + 1));
-			v183.TextSize = 18;
-			v183.TextWrapped = true;
-			v178 = 8;
-		end
-		if (v178 == (5 + 3)) then
-			v183.TextXAlignment = Enum.TextXAlignment.Left;
-			v183.Text = v177.Text;
-			v184.Name = "Outline";
-			v184.Parent = v181;
-			v184.AnchorPoint = Vector2.new(319.5 - (134 + 185), 1133.5 - (549 + 584));
-			v184.BackgroundColor3 = Color3.fromRGB(940 - (314 + 371), 255, 875 - 620);
-			v178 = 977 - (478 + 490);
-		end
-		if (v178 == (8 + 7)) then
-			v192 = false;
-			v179.Content.MouseEnter:Connect(function()
-				v191 = true;
-				v3:Create(v179.Content, TweenInfo.new(1172.25 - (786 + 386), Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0 - 0, false, 1379 - (1055 + 324)), {Rotation=math.random(-3, 1343 - (1093 + 247)),Size=UDim2.new(1.05 + 0, 0 + 0, 1.05, 0 - 0),BackgroundColor3=Color3.fromRGB(865 - 610, 725 - 470, 255)}):Play();
-			end);
-			v179.Content.MouseLeave:Connect(function()
-				local v729 = 0;
-				while true do
-					if (v729 == (0 - 0)) then
-						v191 = false;
-						v3:Create(v179.Content, TweenInfo.new(0.25 + 0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0 - 0), {Rotation=(0 - 0),Size=UDim2.new(1 + 0, 0 - 0, 689 - (364 + 324), 0),BackgroundColor3=Color3.fromRGB(0, 0 - 0, 0 - 0),BackgroundTransparency=(0.8 + 0)}):Play();
-						break;
+				end)
+
+				UIS.InputEnded:Connect(function(Key)
+					if Key.UserInputType == Enum.UserInputType.MouseButton1 and MouseHover then
+						TweenService:Create(Button.Content, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0, false, 0), {Size = UDim2.new(1, 0, 1, 0), BackgroundTransparency = 0.8}):Play()
 					end
+				end)
+			end
+		end
+
+		local LastPos = UDim2.new()
+
+		RS.RenderStepped:Connect(function(DT)
+			DT = DT * 60
+
+			local Time = 0.2
+
+			if Clicking and script.Parent.DropShadow.Position ~= UDim2.new() then
+				local SetPosition = UDim2.new(0, UIS:GetMouseLocation().X, 0, UIS:GetMouseLocation().Y + 125)
+				if LastPos ~= SetPosition then
+					TweenService:Create(script.Parent.DropShadow, TweenInfo.new(Time, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Position = SetPosition}):Play()
+					LastPos = SetPosition
 				end
-			end);
-			v4.InputBegan:Connect(function(v730)
-				if ((v730.UserInputType == Enum.UserInputType.MouseButton1) and v191) then
-					local v751 = 0 - 0;
-					while true do
-						if (v751 == (1 - 0)) then
-							if not v192 then
-								local v763 = 0;
-								while true do
-									if (v763 == 1) then
-										v3:Create(v190, TweenInfo.new(0.3 - 0, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 1268 - (1249 + 19)), {Transparency=(0 + 0),Color=Color3.fromRGB(255, 255, 992 - 737)}):Play();
-										break;
-									end
-									if (v763 == (1086 - (686 + 400))) then
-										v192 = true;
-										v3:Create(v185, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Position=UDim2.new(0.767 + 0, 0, 229.5 - (73 + 156), 0),BackgroundTransparency=(0 + 0),BackgroundColor3=Color3.fromRGB(149, 1066 - (721 + 90), 1 + 48)}):Play();
-										v763 = 3 - 2;
-									end
-								end
-							else
-								v192 = false;
-								v3:Create(v185, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 470 - (224 + 246), false, 0 - 0), {Position=UDim2.new(0.236 - 0, 0 + 0, 0.5 + 0, 0),BackgroundTransparency=(0.25 + 0),BackgroundColor3=Color3.fromRGB(506 - 251, 848 - 593, 255)}):Play();
-								v3:Create(v190, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 513 - (203 + 310), false, 0), {Transparency=0.45,Color=Color3.fromRGB(2248 - (1238 + 755), 255, 18 + 237)}):Play();
-							end
-							break;
-						end
-						if (v751 == 0) then
-							v3:Create(v179.Content, TweenInfo.new(1534.3 - (709 + 825), Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0 - 0, false, 0), {Size=UDim2.new(0.95 - 0, 864 - (196 + 668), 0.95 - 0, 0 - 0),BackgroundTransparency=(833.6 - (171 + 662))}):Play();
-							v177.Function(v192);
-							v751 = 94 - (4 + 89);
-						end
-					end
-				end
-			end);
-			v4.InputEnded:Connect(function(v731)
-				if ((v731.UserInputType == Enum.UserInputType.MouseButton1) and v191) then
-					v3:Create(v179.Content, TweenInfo.new(0.25 - 0, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0 + 0, false, 0 - 0), {Size=UDim2.new(1 + 0, 1486 - (35 + 1451), 1454 - (28 + 1425), 0),BackgroundTransparency=(1993.8 - (941 + 1052))}):Play();
-				end
-			end);
-			break;
+			end
+		end)
+	end
+	coroutine.wrap(LUPORG_fake_script)()
+	
+	MinBTN.MouseButton1Up:Connect(function()
+		GUI.NotifyLocalPlayer({
+			Text = "To re-open your UI press Left Shift."
+		})
+	end)
+
+	MainUI = MainFrame
+end
+
+GUI.CreateCatagory = function(CatagorySetting)
+	CatagorySetting = CatagorySetting or {}
+	CatagorySetting.Name = CatagorySetting.Name or "Catagory Name"
+	-- Instances:
+
+	local CatagoryBTN = Instance.new("Frame")
+	local UICorner = Instance.new("UICorner")
+	local Content = Instance.new("Frame")
+	local UICorner_2 = Instance.new("UICorner")
+	local TextLabel = Instance.new("TextLabel")
+
+	--Properties:
+
+	CatagoryBTN.Name = CatagorySetting.Name
+	CatagoryBTN.Parent = MainUI.Catagory.Buttons
+	CatagoryBTN.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	CatagoryBTN.BackgroundTransparency = 1.000
+	CatagoryBTN.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	CatagoryBTN.BorderSizePixel = 0
+	CatagoryBTN.Size = UDim2.new(0, 100, 0, 100)
+
+	UICorner.CornerRadius = UDim.new(0, 10)
+	UICorner.Parent = CatagoryBTN
+
+	Content.Name = "Content"
+	Content.Parent = CatagoryBTN
+	Content.AnchorPoint = Vector2.new(0.5, 0.5)
+	Content.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Content.BackgroundTransparency = 0.800
+	Content.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Content.BorderSizePixel = 0
+	Content.Position = UDim2.new(0.5, 0, 0.5, 0)
+	Content.Size = UDim2.new(1, 0, 1, 0)
+
+	UICorner_2.CornerRadius = UDim.new(0, 10)
+	UICorner_2.Parent = Content
+
+	TextLabel.Parent = Content
+	TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel.BorderSizePixel = 0
+	TextLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+	TextLabel.Size = UDim2.new(1, 0, 1, 0)
+	TextLabel.Font = Enum.Font.SourceSansBold
+	TextLabel.Text = CatagorySetting.Name
+	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.TextSize = 18.000
+	
+	-- Instances:
+
+	local Content = Instance.new("ScrollingFrame")
+	local UIGridLayout = Instance.new("UIGridLayout")
+
+	--Properties:
+
+	Content.Name = CatagorySetting.Name
+	Content.Parent = MainUI.Content
+	Content.Active = true
+	Content.AnchorPoint = Vector2.new(0.5, 0.5)
+	Content.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Content.BackgroundTransparency = 1.000
+	Content.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Content.BorderSizePixel = 0
+	Content.Position = UDim2.new(1.5, 0, 0.5, 0)
+	Content.Size = UDim2.new(1, 0, 0.970000029, 0)
+	Content.CanvasSize = UDim2.new(0, 0, 1, 0)
+	Content.ScrollBarThickness = 4
+
+	UIGridLayout.Parent = Content
+	UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+	UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	UIGridLayout.CellPadding = UDim2.new(0, 5, 0, 3)
+	UIGridLayout.CellSize = UDim2.new(0, 360, 0, 32)
+	
+	CurrentContent = Content
+end
+
+GUI.CreateLabel = function(LabelSettings)
+	LabelSettings = LabelSettings or {}
+	LabelSettings.Text = LabelSettings.Text or "Text Label Text"
+	
+	-- Instances:
+
+	local Label = Instance.new("Frame")
+	local UICorner = Instance.new("UICorner")
+	local Content = Instance.new("Frame")
+	local UICorner_2 = Instance.new("UICorner")
+	local TextLabel = Instance.new("TextLabel")
+
+	--Properties:
+
+	Label.Name = LabelSettings.Text
+	Label.Parent = CurrentContent
+	Label.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Label.BackgroundTransparency = 1.000
+	Label.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Label.BorderSizePixel = 0
+	Label.Position = UDim2.new(0.325737268, 0, 6.07363333e-08, 0)
+	Label.Size = UDim2.new(0, 280, 0, 60)
+
+	UICorner.CornerRadius = UDim.new(0, 10)
+	UICorner.Parent = Label
+
+	Content.Name = "Content"
+	Content.Parent = Label
+	Content.AnchorPoint = Vector2.new(0.5, 0.5)
+	Content.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Content.BackgroundTransparency = 1.000
+	Content.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Content.BorderSizePixel = 0
+	Content.Position = UDim2.new(0.5, 0, 0.5, 0)
+	Content.Size = UDim2.new(1, 0, 1, 0)
+
+	UICorner_2.CornerRadius = UDim.new(0, 10)
+	UICorner_2.Parent = Content
+
+	TextLabel.Parent = Content
+	TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel.BorderSizePixel = 0
+	TextLabel.Position = UDim2.new(0.511805594, 0, 0.5, 0)
+	TextLabel.Size = UDim2.new(0.976388991, 0, 1, 0)
+	TextLabel.Font = Enum.Font.SourceSansBold
+	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.TextSize = 18.000
+	TextLabel.TextWrapped = true
+	TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+	TextLabel.Text = LabelSettings.Text
+end
+
+GUI.AddLabelToAbout = function(LabelSettings)
+	LabelSettings = LabelSettings or {}
+	LabelSettings.Text = LabelSettings.Text or "Text Label"
+	-- Instances:
+
+	local Label = Instance.new("Frame")
+	local UICorner = Instance.new("UICorner")
+	local Content = Instance.new("Frame")
+	local UICorner_2 = Instance.new("UICorner")
+	local TextLabel = Instance.new("TextLabel")
+
+	--Properties:
+
+	Label.Name = LabelSettings.Text
+	Label.Parent = MainUI.Content.About
+	Label.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Label.BackgroundTransparency = 1.000
+	Label.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Label.BorderSizePixel = 0
+	Label.Position = UDim2.new(0.325737268, 0, 6.07363333e-08, 0)
+	Label.Size = UDim2.new(0, 280, 0, 60)
+
+	UICorner.CornerRadius = UDim.new(0, 10)
+	UICorner.Parent = Label
+
+	Content.Name = "Content"
+	Content.Parent = Label
+	Content.AnchorPoint = Vector2.new(0.5, 0.5)
+	Content.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Content.BackgroundTransparency = 1.000
+	Content.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Content.BorderSizePixel = 0
+	Content.Position = UDim2.new(0.5, 0, 0.5, 0)
+	Content.Size = UDim2.new(1, 0, 1, 0)
+
+	UICorner_2.CornerRadius = UDim.new(0, 10)
+	UICorner_2.Parent = Content
+
+	TextLabel.Parent = Content
+	TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel.BorderSizePixel = 0
+	TextLabel.Position = UDim2.new(0.511805594, 0, 0.5, 0)
+	TextLabel.Size = UDim2.new(0.976388991, 0, 1, 0)
+	TextLabel.Font = Enum.Font.SourceSansBold
+	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.TextSize = 18.000
+	TextLabel.TextWrapped = true
+	TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+	TextLabel.Text = LabelSettings.Text
+end
+
+GUI.CreateButton = function(ButtonSettings)
+	ButtonSettings = ButtonSettings or {}
+	ButtonSettings.Text = ButtonSettings.Text or "Button Name Here"
+	ButtonSettings.Function = ButtonSettings.Function or function() end
+	-- Instances:
+
+	local Button = Instance.new("Frame")
+	local UICorner = Instance.new("UICorner")
+	local Content = Instance.new("Frame")
+	local UICorner_2 = Instance.new("UICorner")
+	local TextLabel = Instance.new("TextLabel")
+	local Logo = Instance.new("ImageLabel")
+
+	--Properties:
+
+	Button.Name = ButtonSettings.Text
+	Button.Parent = CurrentContent
+	Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Button.BackgroundTransparency = 1.000
+	Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Button.BorderSizePixel = 0
+	Button.Position = UDim2.new(0.325737268, 0, 6.07363333e-08, 0)
+	Button.Size = UDim2.new(0, 280, 0, 60)
+
+	UICorner.CornerRadius = UDim.new(0, 10)
+	UICorner.Parent = Button
+
+	Content.Name = "Content"
+	Content.Parent = Button
+	Content.AnchorPoint = Vector2.new(0.5, 0.5)
+	Content.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Content.BackgroundTransparency = 0.800
+	Content.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Content.BorderSizePixel = 0
+	Content.Position = UDim2.new(0.5, 0, 0.5, 0)
+	Content.Size = UDim2.new(1, 0, 1, 0)
+
+	UICorner_2.CornerRadius = UDim.new(0, 10)
+	UICorner_2.Parent = Content
+
+	TextLabel.Parent = Content
+	TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel.BorderSizePixel = 0
+	TextLabel.Position = UDim2.new(0.511805594, 0, 0.5, 0)
+	TextLabel.Size = UDim2.new(0.976388991, 0, 1, 0)
+	TextLabel.Font = Enum.Font.SourceSansBold
+	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.TextSize = 18.000
+	TextLabel.TextWrapped = true
+	TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+	TextLabel.Text = ButtonSettings.Text
+
+	Logo.Name = "Logo"
+	Logo.Parent = Content
+	Logo.AnchorPoint = Vector2.new(0.5, 0.5)
+	Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Logo.BackgroundTransparency = 1.000
+	Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Logo.BorderSizePixel = 0
+	Logo.Position = UDim2.new(0.910820961, 0, 0.5, 0)
+	Logo.Size = UDim2.new(0.0783584565, 0, 0.875, 0)
+	Logo.Image = "rbxassetid://15689064619"
+	Logo.ImageColor3 = Color3.fromRGB(0, 0, 0)
+	Logo.ImageTransparency = 0.250
+	
+	local MouseHover = false
+	
+	Button.Content.MouseEnter:Connect(function()
+		MouseHover = true
+		TweenService:Create(Button.Content, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {Rotation = math.random(-3, 3), Size = UDim2.new(1.05, 0, 1.05, 0), BackgroundColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+	end)
+
+	Button.Content.MouseLeave:Connect(function()
+		MouseHover = false
+		TweenService:Create(Button.Content, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {Rotation = 0, Size = UDim2.new(1, 0, 1, 0), BackgroundColor3 = Color3.fromRGB(0, 0, 0), BackgroundTransparency = 0.8}):Play()
+	end)
+	
+	UIS.InputBegan:Connect(function(Key)
+		if Key.UserInputType == Enum.UserInputType.MouseButton1 and MouseHover then
+			TweenService:Create(Button.Content, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Size = UDim2.new(0.95, 0, 0.95, 0), BackgroundTransparency = 0.6}):Play()
+			ButtonSettings.Function()
 		end
-		if (v178 == (5 + 0)) then
-			v181.BorderColor3 = Color3.fromRGB(1514 - (822 + 692), 0 - 0, 0 + 0);
-			v181.BorderSizePixel = 297 - (45 + 252);
-			v181.Position = UDim2.new(0.5 + 0, 0, 0.5 + 0, 0);
-			v181.Size = UDim2.new(1, 0, 2 - 1, 0);
-			v182.CornerRadius = UDim.new(433 - (114 + 319), 14 - 4);
-			v182.Parent = v181;
-			v178 = 7 - 1;
+	end)
+	
+	UIS.InputEnded:Connect(function(Key)
+		if Key.UserInputType == Enum.UserInputType.MouseButton1 and MouseHover then
+			TweenService:Create(Button.Content, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0, false, 0), {Size = UDim2.new(1, 0, 1, 0), BackgroundTransparency = 0.8}):Play()
 		end
-		if (v178 == (4 + 2)) then
-			v183.Parent = v181;
-			v183.AnchorPoint = Vector2.new(0.5, 0.5 - 0);
-			v183.BackgroundColor3 = Color3.fromRGB(255, 534 - 279, 255);
-			v183.BackgroundTransparency = 1964 - (556 + 1407);
-			v183.BorderColor3 = Color3.fromRGB(0, 1206 - (741 + 465), 465 - (170 + 295));
-			v183.BorderSizePixel = 0 + 0;
-			v178 = 7;
+	end)
+end
+
+GUI.CreateToggle = function(ToggleSettings)
+	ToggleSettings = ToggleSettings or {}
+	ToggleSettings.Text = ToggleSettings.Text or "Your Text Here"
+	ToggleSettings.Function = ToggleSettings.Function or function() end
+	-- Instances:
+
+	local Toggle = Instance.new("Frame")
+	local UICorner = Instance.new("UICorner")
+	local Content = Instance.new("Frame")
+	local UICorner_2 = Instance.new("UICorner")
+	local TextLabel = Instance.new("TextLabel")
+	local Outline = Instance.new("Frame")
+	local Ball = Instance.new("Frame")
+	local UICorner_3 = Instance.new("UICorner")
+	local Background = Instance.new("Frame")
+	local UICorner_4 = Instance.new("UICorner")
+	local UICorner_5 = Instance.new("UICorner")
+	local UIStroke = Instance.new("UIStroke")
+
+	--Properties:
+
+	Toggle.Name = ToggleSettings.Text
+	Toggle.Parent = CurrentContent
+	Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Toggle.BackgroundTransparency = 1.000
+	Toggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Toggle.BorderSizePixel = 0
+	Toggle.Position = UDim2.new(0.325737268, 0, 6.07363333e-08, 0)
+	Toggle.Size = UDim2.new(0, 280, 0, 60)
+
+	UICorner.CornerRadius = UDim.new(0, 10)
+	UICorner.Parent = Toggle
+
+	Content.Name = "Content"
+	Content.Parent = Toggle
+	Content.AnchorPoint = Vector2.new(0.5, 0.5)
+	Content.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Content.BackgroundTransparency = 0.800
+	Content.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Content.BorderSizePixel = 0
+	Content.Position = UDim2.new(0.5, 0, 0.5, 0)
+	Content.Size = UDim2.new(1, 0, 1, 0)
+
+	UICorner_2.CornerRadius = UDim.new(0, 10)
+	UICorner_2.Parent = Content
+
+	TextLabel.Parent = Content
+	TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel.BorderSizePixel = 0
+	TextLabel.Position = UDim2.new(0.511805594, 0, 0.5, 0)
+	TextLabel.Size = UDim2.new(0.976388991, 0, 1, 0)
+	TextLabel.Font = Enum.Font.SourceSansBold
+	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.TextSize = 18.000
+	TextLabel.TextWrapped = true
+	TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+	TextLabel.Text = ToggleSettings.Text
+
+	Outline.Name = "Outline"
+	Outline.Parent = Content
+	Outline.AnchorPoint = Vector2.new(0.5, 0.5)
+	Outline.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Outline.BackgroundTransparency = 1.000
+	Outline.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Outline.BorderSizePixel = 0
+	Outline.Position = UDim2.new(0.896527767, 0, 0.499999881, 0)
+	Outline.Size = UDim2.new(0.154166669, 0, 0.799999952, 0)
+
+	UIStroke.Name = "UIStroke"
+	UIStroke.Parent = Outline
+	UIStroke.Color = Color3.fromRGB(255, 255, 255)
+	UIStroke.Thickness = 2
+	UIStroke.Transparency = 0.45
+
+	Ball.Name = "Ball"
+	Ball.Parent = Outline
+	Ball.AnchorPoint = Vector2.new(0.5, 0.5)
+	Ball.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Ball.BackgroundTransparency = 0.250
+	Ball.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Ball.BorderSizePixel = 0
+	Ball.Position = UDim2.new(0.236000001, 0, 0.5, 0)
+	Ball.Size = UDim2.new(0.422094226, 0, 0.910937548, 0)
+
+	UICorner_3.CornerRadius = UDim.new(1, 0)
+	UICorner_3.Parent = Ball
+
+	Background.Name = "Background"
+	Background.Parent = Outline
+	Background.AnchorPoint = Vector2.new(0.5, 0.5)
+	Background.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Background.BackgroundTransparency = 0.600
+	Background.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Background.BorderSizePixel = 0
+	Background.Position = UDim2.new(0.5, 0, 0.5, 0)
+	Background.Size = UDim2.new(1, 0, 1, 0)
+	Background.ZIndex = 0
+
+	UICorner_4.CornerRadius = UDim.new(1, 0)
+	UICorner_4.Parent = Background
+
+	UICorner_5.CornerRadius = UDim.new(1, 0)
+	UICorner_5.Parent = Outline
+	
+	local MouseHover = false
+	local CanToggle = false
+
+	Toggle.Content.MouseEnter:Connect(function()
+		MouseHover = true
+		TweenService:Create(Toggle.Content, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {Rotation = math.random(-3, 3), Size = UDim2.new(1.05, 0, 1.05, 0), BackgroundColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+	end)
+
+	Toggle.Content.MouseLeave:Connect(function()
+		MouseHover = false
+		TweenService:Create(Toggle.Content, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {Rotation = 0, Size = UDim2.new(1, 0, 1, 0), BackgroundColor3 = Color3.fromRGB(0, 0, 0), BackgroundTransparency = 0.8}):Play()
+	end)
+
+	UIS.InputBegan:Connect(function(Key)
+		if Key.UserInputType == Enum.UserInputType.MouseButton1 and MouseHover then
+			TweenService:Create(Toggle.Content, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Size = UDim2.new(0.95, 0, 0.95, 0), BackgroundTransparency = 0.6}):Play()
+			ToggleSettings.Function(CanToggle)
+			
+			if not CanToggle then
+				CanToggle = true
+				TweenService:Create(Ball, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Position = UDim2.new(0.767, 0, 0.5, 0), BackgroundTransparency = 0, BackgroundColor3 = Color3.fromRGB(149, 255, 49)}):Play()
+				TweenService:Create(UIStroke, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Transparency = 0, Color = Color3.fromRGB(255, 255, 255)}):Play()
+			else
+				CanToggle = false
+				TweenService:Create(Ball, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Position = UDim2.new(0.236, 0, 0.5, 0), BackgroundTransparency = 0.25, BackgroundColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+				TweenService:Create(UIStroke, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Transparency = 0.45, Color = Color3.fromRGB(255, 255, 255)}):Play()
+			end
+			
 		end
-		if (v178 == (12 + 1)) then
-			v187.BackgroundColor3 = Color3.fromRGB(0 - 0, 0 + 0, 0 + 0);
-			v187.BackgroundTransparency = 0.6 + 0;
-			v187.BorderColor3 = Color3.fromRGB(1230 - (957 + 273), 0 + 0, 0 + 0);
-			v187.BorderSizePixel = 0 - 0;
-			v187.Position = UDim2.new(0.5, 0 - 0, 0.5, 0 - 0);
-			v187.Size = UDim2.new(1, 0 - 0, 1781 - (389 + 1391), 0);
-			v178 = 9 + 5;
+	end)
+
+	UIS.InputEnded:Connect(function(Key)
+		if Key.UserInputType == Enum.UserInputType.MouseButton1 and MouseHover then
+			TweenService:Create(Toggle.Content, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut, 0, false, 0), {Size = UDim2.new(1, 0, 1, 0), BackgroundTransparency = 0.8}):Play()
 		end
-		if (v178 == 3) then
-			v179.BackgroundTransparency = 1 + 0;
-			v179.BorderColor3 = Color3.fromRGB(0 - 0, 951 - (783 + 168), 0 - 0);
-			v179.BorderSizePixel = 0 + 0;
-			v179.Position = UDim2.new(311.325737268 - (309 + 2), 0 - 0, 1212.0000000607363 - (1090 + 122), 0 + 0);
-			v179.Size = UDim2.new(0 - 0, 192 + 88, 1118 - (628 + 490), 60);
-			v180.CornerRadius = UDim.new(0 + 0, 24 - 14);
-			v178 = 18 - 14;
+	end)
+end
+
+GUI.CreateSlider = function(SliderSettings)
+	SliderSettings = SliderSettings or {}
+	SliderSettings.Text = SliderSettings.Text or "Slider Name Here"
+	SliderSettings.MinimumValue = SliderSettings.MinimumValue or 1
+	SliderSettings.MaximumValue = SliderSettings.MaximumValue or 100
+	SliderSettings.DefaultValue = SliderSettings.DefaultValue or 50
+	SliderSettings.Function = SliderSettings.Function or function() end
+	
+	-- Instances:
+
+	local Slider = Instance.new("Frame")
+	local UICorner = Instance.new("UICorner")
+	local Content = Instance.new("Frame")
+	local UICorner_2 = Instance.new("UICorner")
+	local TextLabel = Instance.new("TextLabel")
+	local Slider_2 = Instance.new("Frame")
+	local UICorner_3 = Instance.new("UICorner")
+	local Fill = Instance.new("Frame")
+	local UICorner_4 = Instance.new("UICorner")
+	local OutputValue = Instance.new("TextLabel")
+	local UICorner_5 = Instance.new("UICorner")
+
+	--Properties:
+
+	Slider.Name = SliderSettings.Text
+	Slider.Parent = CurrentContent
+	Slider.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Slider.BackgroundTransparency = 1.000
+	Slider.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Slider.BorderSizePixel = 0
+	Slider.Position = UDim2.new(0.325737268, 0, 6.07363333e-08, 0)
+	Slider.Size = UDim2.new(0, 280, 0, 60)
+
+	UICorner.CornerRadius = UDim.new(0, 10)
+	UICorner.Parent = Slider
+
+	Content.Name = "Content"
+	Content.Parent = Slider
+	Content.AnchorPoint = Vector2.new(0.5, 0.5)
+	Content.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Content.BackgroundTransparency = 0.800
+	Content.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Content.BorderSizePixel = 0
+	Content.Position = UDim2.new(0.5, 0, 0.5, 0)
+	Content.Size = UDim2.new(1, 0, 1, 0)
+
+	UICorner_2.CornerRadius = UDim.new(0, 10)
+	UICorner_2.Parent = Content
+
+	TextLabel.Parent = Content
+	TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel.BorderSizePixel = 0
+	TextLabel.Position = UDim2.new(0.511805594, 0, 0.5, 0)
+	TextLabel.Size = UDim2.new(0.976388991, 0, 1, 0)
+	TextLabel.Font = Enum.Font.SourceSansBold
+	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.TextSize = 18.000
+	TextLabel.TextWrapped = true
+	TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+	TextLabel.Text = SliderSettings.Text
+
+	Slider_2.Name = "Slider"
+	Slider_2.Parent = Content
+	Slider_2.AnchorPoint = Vector2.new(0.5, 0.5)
+	Slider_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Slider_2.BackgroundTransparency = 0.600
+	Slider_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Slider_2.BorderSizePixel = 0
+	Slider_2.ClipsDescendants = true
+	Slider_2.Position = UDim2.new(0.699999988, 0, 0.497395754, 0)
+	Slider_2.Size = UDim2.new(0.361111104, 0, 0.543749988, 0)
+
+	UICorner_3.CornerRadius = UDim.new(1, 0)
+	UICorner_3.Parent = Slider_2
+
+	Fill.Name = "Fill"
+	Fill.Parent = Slider_2
+	Fill.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Fill.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Fill.BorderSizePixel = 0
+	Fill.Size = UDim2.new(1, 0, 1.00000012, 0)
+	Fill.ClipsDescendants = true
+
+	UICorner_4.CornerRadius = UDim.new(1, 0)
+	UICorner_4.Parent = Fill
+
+	OutputValue.Name = "OutputValue"
+	OutputValue.Parent = Content
+	OutputValue.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	OutputValue.BackgroundTransparency = 0.700
+	OutputValue.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	OutputValue.BorderSizePixel = 0
+	OutputValue.Position = UDim2.new(0.905555546, 0, 0.142187595, 0)
+	OutputValue.Size = UDim2.new(0.0611111112, 0, 0.699999809, 0)
+	OutputValue.Font = Enum.Font.SourceSansBold
+	OutputValue.Text = "14"
+	OutputValue.TextColor3 = Color3.fromRGB(255, 255, 255)
+	OutputValue.TextSize = 14.000
+	OutputValue.TextTransparency = 0.300
+
+	UICorner_5.CornerRadius = UDim.new(0, 6)
+	UICorner_5.Parent = OutputValue
+	
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	local Slider2 = Slider_2
+	local Fill = Fill
+	local Label = OutputValue
+
+	local MaxValue = SliderSettings.MaximumValue / 100
+	local StartValue = SliderSettings.MinimumValue / 100
+	
+	local SliderActive = false
+	local MouseInSlider = false
+
+	local SetValue = SliderSettings.DefaultValue / 100
+	Label.Text = tostring(math.round(SetValue * 100))
+
+	local FinalValue = math.round(SetValue + 100)
+	
+	Fill.Size = UDim2.fromScale((SetValue - StartValue) * (1 - 0) / (MaxValue - StartValue) + 0, 1)
+
+	Slider2.MouseEnter:Connect(function()
+		MouseInSlider = true
+	end)
+
+	Slider2.MouseLeave:Connect(function()
+		MouseInSlider = false
+	end)
+	
+	Slider.MouseEnter:Connect(function()
+		TweenService:Create(Slider2.Parent, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {BackgroundColor3 = Color3.fromRGB(255, 255, 255), BackgroundTransparency = 0.6}):Play()
+	end)
+	
+	Slider.MouseLeave:Connect(function()
+		TweenService:Create(Slider2.Parent, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {BackgroundColor3 = Color3.fromRGB(0, 0, 0), BackgroundTransparency = 0.8}):Play()
+	end)
+
+	local UpdateSlider = function()
+		local Output = math.clamp(((Vector2.new(Mouse.X, Mouse.Y) - Slider2.AbsolutePosition) / Slider2.AbsoluteSize).X, 0, 1)
+
+		local OutputClamped = StartValue + (Output * (MaxValue - StartValue))
+
+		if Output ~= OutputClamped then
+			TweenService:Create(Fill, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {Size = UDim2.fromScale(Output, 1)}):Play()
 		end
-		if (v178 == (776 - (431 + 343))) then
-			v188 = Instance.new("UICorner");
-			v189 = Instance.new("UICorner");
-			v190 = Instance.new("UIStroke");
-			v179.Name = v177.Text;
-			v179.Parent = v2;
-			v179.BackgroundColor3 = Color3.fromRGB(0 - 0, 0 - 0, 0 + 0);
-			v178 = 1 + 2;
-		end
-		if (v178 == (1696 - (556 + 1139))) then
-			v182 = Instance.new("UICorner");
-			v183 = Instance.new("TextLabel");
-			v184 = Instance.new("Frame");
-			v185 = Instance.new("Frame");
-			v186 = Instance.new("UICorner");
-			v187 = Instance.new("Frame");
-			v178 = 2;
-		end
-		if ((25 - (6 + 9)) == v178) then
-			v190.Parent = v184;
-			v190.Color = Color3.fromRGB(255, 255, 255);
-			v190.Thickness = 1 + 1;
-			v190.Transparency = 0.45;
-			v185.Name = "Ball";
-			v185.Parent = v184;
-			v178 = 6 + 5;
-		end
-		if (v178 == (178 - (28 + 141))) then
-			v184.BackgroundTransparency = 1 + 0;
-			v184.BorderColor3 = Color3.fromRGB(0 - 0, 0 + 0, 0);
-			v184.BorderSizePixel = 0;
-			v184.Position = UDim2.new(1317.896527767 - (486 + 831), 0, 0.499999881 - 0, 0);
-			v184.Size = UDim2.new(0.154166669 - 0, 0, 0.799999952 + 0, 0 - 0);
-			v190.Name = "UIStroke";
-			v178 = 1273 - (668 + 595);
-		end
-		if (v178 == (0 + 0)) then
-			v177 = v177 or {};
-			v177.Text = v177.Text or "Your Text Here";
-			v177.Function = v177.Function or function()
-			end;
-			v179 = Instance.new("Frame");
-			v180 = Instance.new("UICorner");
-			v181 = Instance.new("Frame");
-			v178 = 1 + 0;
-		end
-		if (v178 == (29 - 18)) then
-			v185.AnchorPoint = Vector2.new(290.5 - (23 + 267), 0.5);
-			v185.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
-			v185.BackgroundTransparency = 1944.25 - (1129 + 815);
-			v185.BorderColor3 = Color3.fromRGB(387 - (371 + 16), 1750 - (1326 + 424), 0 - 0);
-			v185.BorderSizePixel = 0;
-			v185.Position = UDim2.new(0.236000001 - 0, 118 - (88 + 30), 771.5 - (720 + 51), 0);
-			v178 = 26 - 14;
-		end
-		if (v178 == 14) then
-			v187.ZIndex = 1776 - (421 + 1355);
-			v188.CornerRadius = UDim.new(1 - 0, 0 + 0);
-			v188.Parent = v187;
-			v189.CornerRadius = UDim.new(1, 0);
-			v189.Parent = v184;
-			v191 = false;
-			v178 = 1098 - (286 + 797);
-		end
-		if ((14 - 10) == v178) then
-			v180.Parent = v179;
-			v181.Name = "Content";
-			v181.Parent = v179;
-			v181.AnchorPoint = Vector2.new(0.5, 0.5);
-			v181.BackgroundColor3 = Color3.fromRGB(0 - 0, 439 - (397 + 42), 0 + 0);
-			v181.BackgroundTransparency = 800.8 - (24 + 776);
-			v178 = 5;
-		end
-		if ((17 - 5) == v178) then
-			v185.Size = UDim2.new(785.422094226 - (222 + 563), 0 - 0, 0.910937548 + 0, 0);
-			v186.CornerRadius = UDim.new(191 - (23 + 167), 0);
-			v186.Parent = v185;
-			v187.Name = "Background";
-			v187.Parent = v184;
-			v187.AnchorPoint = Vector2.new(1798.5 - (690 + 1108), 0.5 + 0);
-			v178 = 13;
+
+		SetValue = OutputClamped
+
+		Label.Text = tostring(math.round(SetValue * 100))
+
+		FinalValue = math.round(OutputClamped * 100)
+
+		SliderSettings.Function(FinalValue)
+	end
+
+	local ActiveSlider = function()
+		SliderActive = true
+		while SliderActive do
+			UpdateSlider()
+			task.wait()
 		end
 	end
-end;
-v0.CreateSlider = function(v193)
-	v193 = v193 or {};
-	v193.Text = v193.Text or "Slider Name Here";
-	v193.MinimumValue = v193.MinimumValue or (1 + 0);
-	v193.MaximumValue = v193.MaximumValue or 100;
-	v193.DefaultValue = v193.DefaultValue or (898 - (40 + 808));
-	v193.Function = v193.Function or function()
-	end;
-	local v199 = Instance.new("Frame");
-	local v200 = Instance.new("UICorner");
-	local v201 = Instance.new("Frame");
-	local v202 = Instance.new("UICorner");
-	local v203 = Instance.new("TextLabel");
-	local v204 = Instance.new("Frame");
-	local v205 = Instance.new("UICorner");
-	local v206 = Instance.new("Frame");
-	local v207 = Instance.new("UICorner");
-	local v208 = Instance.new("TextLabel");
-	local v209 = Instance.new("UICorner");
-	v199.Name = v193.Text;
-	v199.Parent = v2;
-	v199.BackgroundColor3 = Color3.fromRGB(0, 0 + 0, 0 - 0);
-	v199.BackgroundTransparency = 1;
-	v199.BorderColor3 = Color3.fromRGB(0 + 0, 0 + 0, 0 + 0);
-	v199.BorderSizePixel = 571 - (47 + 524);
-	v199.Position = UDim2.new(0.325737268, 0 + 0, 6.073633e-8, 0);
-	v199.Size = UDim2.new(0 - 0, 280, 0, 60);
-	v200.CornerRadius = UDim.new(0 - 0, 10);
-	v200.Parent = v199;
-	v201.Name = "Content";
-	v201.Parent = v199;
-	v201.AnchorPoint = Vector2.new(0.5 - 0, 1726.5 - (1165 + 561));
-	v201.BackgroundColor3 = Color3.fromRGB(0 + 0, 0 - 0, 0);
-	v201.BackgroundTransparency = 0.8 + 0;
-	v201.BorderColor3 = Color3.fromRGB(479 - (341 + 138), 0 + 0, 0 - 0);
-	v201.BorderSizePixel = 0;
-	v201.Position = UDim2.new(326.5 - (89 + 237), 0 - 0, 0.5 - 0, 881 - (581 + 300));
-	v201.Size = UDim2.new(1, 1220 - (855 + 365), 1, 0 - 0);
-	v202.CornerRadius = UDim.new(0, 4 + 6);
-	v202.Parent = v201;
-	v203.Parent = v201;
-	v203.AnchorPoint = Vector2.new(0.5, 1235.5 - (1030 + 205));
-	v203.BackgroundColor3 = Color3.fromRGB(240 + 15, 238 + 17, 255);
-	v203.BackgroundTransparency = 287 - (156 + 130);
-	v203.BorderColor3 = Color3.fromRGB(0 - 0, 0 - 0, 0);
-	v203.BorderSizePixel = 0 - 0;
-	v203.Position = UDim2.new(0.511805594, 0 + 0, 0.5 + 0, 0);
-	v203.Size = UDim2.new(69.976388991 - (10 + 59), 0 + 0, 1, 0 - 0);
-	v203.Font = Enum.Font.SourceSansBold;
-	v203.TextColor3 = Color3.fromRGB(255, 1418 - (671 + 492), 203 + 52);
-	v203.TextSize = 1233 - (369 + 846);
-	v203.TextWrapped = true;
-	v203.TextXAlignment = Enum.TextXAlignment.Left;
-	v203.Text = v193.Text;
-	v204.Name = "Slider";
-	v204.Parent = v201;
-	v204.AnchorPoint = Vector2.new(0.5 + 0, 0.5 + 0);
-	v204.BackgroundColor3 = Color3.fromRGB(1945 - (1036 + 909), 0 + 0, 0 - 0);
-	v204.BackgroundTransparency = 203.6 - (11 + 192);
-	v204.BorderColor3 = Color3.fromRGB(0 + 0, 0, 0);
-	v204.BorderSizePixel = 175 - (135 + 40);
-	v204.ClipsDescendants = true;
-	v204.Position = UDim2.new(0.699999988, 0, 0.497395754, 0);
-	v204.Size = UDim2.new(0.361111104 - 0, 0, 0.543749988, 0);
-	v205.CornerRadius = UDim.new(1, 0);
-	v205.Parent = v204;
-	v206.Name = "Fill";
-	v206.Parent = v204;
-	v206.BackgroundColor3 = Color3.fromRGB(154 + 101, 561 - 306, 382 - 127);
-	v206.BorderColor3 = Color3.fromRGB(176 - (50 + 126), 0, 0 - 0);
-	v206.BorderSizePixel = 0 + 0;
-	v206.Size = UDim2.new(1414 - (1233 + 180), 969 - (522 + 447), 1422.00000012 - (107 + 1314), 0 + 0);
-	v206.ClipsDescendants = true;
-	v207.CornerRadius = UDim.new(2 - 1, 0);
-	v207.Parent = v206;
-	v208.Name = "OutputValue";
-	v208.Parent = v201;
-	v208.BackgroundColor3 = Color3.fromRGB(0, 0 + 0, 0);
-	v208.BackgroundTransparency = 0.7;
-	v208.BorderColor3 = Color3.fromRGB(0 - 0, 0 - 0, 1910 - (716 + 1194));
-	v208.BorderSizePixel = 0;
-	v208.Position = UDim2.new(0.905555546 + 0, 0 + 0, 503.142187595 - (74 + 429), 0);
-	v208.Size = UDim2.new(0.0611111112, 0 - 0, 0.699999809 + 0, 0 - 0);
-	v208.Font = Enum.Font.SourceSansBold;
-	v208.Text = "14";
-	v208.TextColor3 = Color3.fromRGB(181 + 74, 785 - 530, 630 - 375);
-	v208.TextSize = 447 - (279 + 154);
-	v208.TextTransparency = 778.3 - (454 + 324);
-	v209.CornerRadius = UDim.new(0, 6);
-	v209.Parent = v208;
-	local v283 = game.Players.LocalPlayer:GetMouse();
-	local v284 = v204;
-	local v206 = v206;
-	local v285 = v208;
-	local v286 = v193.MaximumValue / (79 + 21);
-	local v287 = v193.MinimumValue / (117 - (12 + 5));
-	local v288 = false;
-	local v289 = false;
-	local v290 = v193.DefaultValue / (54 + 46);
-	v285.Text = tostring(math.round(v290 * (254 - 154)));
-	local v292 = math.round(v290 + 37 + 63);
-	v206.Size = UDim2.fromScale((((v290 - v287) * ((1094 - (277 + 816)) - (0 - 0))) / (v286 - v287)) + (1183 - (1058 + 125)), 1 + 0);
-	v284.MouseEnter:Connect(function()
-		v289 = true;
-	end);
-	v284.MouseLeave:Connect(function()
-		v289 = false;
-	end);
-	v199.MouseEnter:Connect(function()
-		v3:Create(v284.Parent, TweenInfo.new(975.25 - (815 + 160), Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {BackgroundColor3=Color3.fromRGB(255, 255, 255),BackgroundTransparency=(0.6 - 0)}):Play();
-	end);
-	v199.MouseLeave:Connect(function()
-		v3:Create(v284.Parent, TweenInfo.new(0.25 - 0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0 + 0, false, 0), {BackgroundColor3=Color3.fromRGB(0, 0, 0),BackgroundTransparency=(0.8 - 0)}):Play();
-	end);
-	local v293 = function()
-		local v301 = 1898 - (41 + 1857);
-		local v302;
-		local v303;
-		while true do
-			if (v301 == (1894 - (1222 + 671))) then
-				if (v302 ~= v303) then
-					v3:Create(v206, TweenInfo.new(0.2 - 0, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0), {Size=UDim2.fromScale(v302, 1 - 0)}):Play();
-				end
-				v290 = v303;
-				v301 = 1184 - (229 + 953);
-			end
-			if (v301 == 0) then
-				v302 = math.clamp(((Vector2.new(v283.X, v283.Y) - v284.AbsolutePosition) / v284.AbsoluteSize).X, 1774 - (1111 + 663), 1);
-				v303 = v287 + (v302 * (v286 - v287));
-				v301 = 1580 - (874 + 705);
-			end
-			if (v301 == (1 + 2)) then
-				v193.Function(v292);
-				break;
-			end
-			if (v301 == 2) then
-				v285.Text = tostring(math.round(v290 * 100));
-				v292 = math.round(v303 * (69 + 31));
-				v301 = 6 - 3;
-			end
+
+	UIS.InputBegan:Connect(function(Key)
+		if Key.UserInputType == Enum.UserInputType.MouseButton1 and MouseInSlider then
+			ActiveSlider()
 		end
-	end;
-	local v294 = function()
-		local v304 = 0;
-		while true do
-			if (v304 == (0 + 0)) then
-				v288 = true;
-				while v288 do
-					local v748 = 679 - (642 + 37);
-					while true do
-						if (0 == v748) then
-							v293();
-							task.wait();
-							break;
-						end
-					end
-				end
-				break;
-			end
+	end)
+
+	UIS.InputEnded:Connect(function(Key)
+		if Key.UserInputType == Enum.UserInputType.MouseButton1 then
+			SliderActive = false
 		end
-	end;
-	v4.InputBegan:Connect(function(v305)
-		if ((v305.UserInputType == Enum.UserInputType.MouseButton1) and v289) then
-			v294();
-		end
-	end);
-	v4.InputEnded:Connect(function(v306)
-		if (v306.UserInputType == Enum.UserInputType.MouseButton1) then
-			v288 = false;
-		end
-	end);
-end;
-v0.ChangeScale = function(v295)
-	v1.Parent.Parent:FindFirstChildWhichIsA("UIScale").Scale = v295;
-end;
-return v0;
+	end)
+end
+
+GUI.ChangeScale = function(Scale)
+	MainUI.Parent.Parent:FindFirstChildWhichIsA("UIScale").Scale = Scale
+end
+
+return GUI
