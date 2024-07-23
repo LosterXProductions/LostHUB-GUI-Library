@@ -1,6 +1,13 @@
 ![Thread](https://i.imgur.com/JX88NYA.png)
 ## LostHUB Patch Notes
 Latest and Past updates to LostHUB
+### Beta v1.1.1
+```
+- Fixed the issue of the Stroke UI not fading out on exit.
+- Re-positioned the notification pop-up for better visibility.
+- Added a feature to check if the UI is open before its creation.
+- Introduced a function that returns the version of the UI currently in use.
+```
 ### Beta v1.1.0
 ```
 - Given the UI a color tint of choice.
