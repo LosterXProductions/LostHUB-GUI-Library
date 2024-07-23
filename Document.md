@@ -1,5 +1,5 @@
 # LostHUB GUI Library
-Instructions for LostHUB Beta v1.1.0
+Instructions for LostHUB Beta v1.1.1
 
 ## Loading Library
 ```lua
@@ -70,4 +70,10 @@ LostHUB.NotifyLocalPlayer({
 LostHUB.AddLabelToAbout({
 	Text = "Text for About me Section."
 })
+```
+## Checking if the UI is already opened
+```lua
+LostHUB.CheckIfExecuted("UI-Name-Here", function()
+	-- Your normal UI code here.
+end)
 ```
