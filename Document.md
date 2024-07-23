@@ -65,6 +65,8 @@ LostHUB.NotifyLocalPlayer({
 	Text = "They will see this at the top of their screen!"
 })
 ```
+## Extra Options
+
 ## Adding a label in the About Catagory
 ```lua
 LostHUB.AddLabelToAbout({
