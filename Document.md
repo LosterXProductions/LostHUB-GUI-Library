@@ -66,7 +66,7 @@ LostHUB.NotifyLocalPlayer({
 })
 ```
 ## Extra Options
-
+Extra Options if needed.
 ## Adding a label in the About Catagory
 ```lua
 LostHUB.AddLabelToAbout({
