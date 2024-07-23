@@ -1,4 +1,4 @@
-![Thread](https://i.imgur.com/k96QEBv.png)
+![Thread](https://i.imgur.com/JX88NYA.png)
 ## LostHUB Patch Notes
 Latest and Past updates to LostHUB
 ### Beta v1.1.0
