@@ -1,6 +1,6 @@
 ![Thread](https://i.imgur.com/JX88NYA.png)
 ## LostHUB Patch Notes
-Latest and Past updates to LostHUB
+Latest and past updates to LostHUB
 ### Beta v1.1.1
 ```
 - Fixed the issue of the Stroke UI not fading out on exit.
