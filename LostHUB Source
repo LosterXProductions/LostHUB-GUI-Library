@@ -116,7 +116,7 @@ GUI.NotifyLocalPlayer = function(NotifySettings)
 
 	NotiFrame.Parent.Position = UDim2.new(0.5, 0, -0.5, 0)
 
-	TweenService:Create(NotiFrame.Parent, TweenInfo.new(0.75, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Position = UDim2.new(0.5, 0, 0.005, 0)}):Play()
+	TweenService:Create(NotiFrame.Parent, TweenInfo.new(0.75, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0), {Position = UDim2.new(0.5, 0, -0.1, 0)}):Play()
 
 	NotiFrame.MouseEnter:Connect(function()
 		TweenService:Create(NotiFrame, TweenInfo.new(0.45, Enum.EasingStyle.Quart, Enum.EasingDirection.Out, 0, false, 0), {Size = UDim2.new(0, 450, 0, 102)}):Play()
